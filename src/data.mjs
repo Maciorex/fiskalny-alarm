@@ -175,6 +175,39 @@ export const sources = [
     "date": "2026-10-06",
     "url": "https://wiadomosci.radiozet.pl/na-zywo/post/gosc-radia-zet-polsce-grozi-finansowa-katastrofa-balcerowicz-mamy-najwiekszy-deficyt-w-europie",
     "type": "Rozmowa radiowa"
+  },
+  {
+    "id": "mentzen-2026",
+    "title": "Wystąpienie budżetowe: słoń, góra lodowa i Titanic",
+    "publisher": "Konfederacja — publikacja wystąpienia Mentzena",
+    "date": "2026-10-08",
+    "url": "https://konfederacja.pl/plyniemy-na-gore-lodowa-a-wy-cieszycie-sie-i-klaszczecie/",
+    "type": "Transkrypcja opublikowana przez ugrupowanie",
+    "dateNote": "Wystąpienie w Sejmie; nie urzędowy stenogram"
+  },
+  {
+    "id": "mentzen-2025",
+    "title": "Mentzen o projekcie budżetu na 2026 — 42. posiedzenie, dzień 3",
+    "publisher": "Sejm RP — oficjalny stenogram",
+    "date": "2025-10-09",
+    "url": "https://api.sejm.gov.pl/sejm/term10/proceedings/42/2025-10-09/transcripts/008",
+    "type": "Urzędowa transkrypcja wystąpienia"
+  },
+  {
+    "id": "mentzen-2023",
+    "title": "Mentzen o projekcie budżetu na 2024 — 1. posiedzenie, dzień 13",
+    "publisher": "Sejm RP — oficjalny stenogram",
+    "date": "2023-12-21",
+    "url": "https://api.sejm.gov.pl/sejm/term10/proceedings/1/2023-12-21/transcripts/14",
+    "type": "Urzędowa transkrypcja wystąpienia"
+  },
+  {
+    "id": "mentzen-kontrapunkt",
+    "title": "Mentzen: Polska na greckiej ścieżce do bankructwa. Pokazujemy, dlaczego się myli",
+    "publisher": "OKO.press — Adam Suraj",
+    "date": "2026-01-17",
+    "url": "https://oko.press/mentzen-dlug-grecja-debunking",
+    "type": "Analiza krytyczna analogii — nie źródło sejmowego cytatu"
   }
 ];
 export const motifs = [
@@ -525,5 +558,107 @@ export const motifs = [
     "author": "Balcerowicz",
     "source": "lawina",
     "context": "Balcerowicz używa obrazu szybkiego wzrostu kosztów. W tej samej rozmowie nie potwierdza katastrofy rozumianej jako całkowite załamanie."
+  },
+  {
+    "id": "mentzen-slon",
+    "title": "Słoń na sali sejmowej",
+    "author": "Mentzen",
+    "source": "mentzen-2026",
+    "context": "Problem przyszłego dostosowania fiskalnego przedstawiony jako zwierzę ignorowane przez salę. Ocena i wyliczenia należą do mówcy.",
+    "quote": "olbrzymiego słonia"
+  },
+  {
+    "id": "mentzen-lodowa",
+    "title": "Góra lodowa na kursie budżetu",
+    "author": "Mentzen",
+    "source": "mentzen-2026",
+    "context": "Prognozowane dostosowanie budżetu opisane jako przeszkoda na trasie statku. Metafora nie wylicza prawdopodobieństwa bankructwa.",
+    "quote": "wielka góra lodowa"
+  },
+  {
+    "id": "mentzen-titanic",
+    "title": "Orkiestra na Titanicu",
+    "author": "Mentzen",
+    "source": "mentzen-2026",
+    "context": "Mentzen rzeczywiście używa Titanica i orkiestry w końcówce tego wystąpienia. To osobne użycie, nie cytat Dudka.",
+    "quote": "Taka orkiestra gra na Titanicu"
+  },
+  {
+    "id": "mentzen-dokumenty",
+    "title": "Katastrofa wyszła z dokumentów",
+    "author": "Mentzen",
+    "source": "mentzen-2026",
+    "context": "Mówca ogłasza, że przewidywana katastrofa uwidoczniła się w rządowej strategii. Jest to jego interpretacja prognozy, nie stwierdzenie bankructwa."
+  },
+  {
+    "id": "mentzen-ojcowie",
+    "title": "Ojcowie ukrytego długu",
+    "author": "Mentzen",
+    "source": "mentzen-2025",
+    "context": "Tusk, Kaczyński i Morawiecki przedstawieni jako rodzice pozabudżetowego zadłużenia. Karta dokumentuje polityczny zarzut, nie jego rozstrzygnięcie.",
+    "quote": "ojcowie naszego ukrytego długu"
+  },
+  {
+    "id": "mentzen-snieg",
+    "title": "Kula śnieżna według Mentzena",
+    "author": "Mentzen",
+    "source": "mentzen-2025",
+    "context": "Samonapędzające się zadłużenie zobrazowane kulą śnieżną. Ten sam obraz pojawia się u innych autorów; pokazujemy odrębne wystąpienie.",
+    "quote": "efekt kuli śnieżnej"
+  },
+  {
+    "id": "mentzen-kosmos",
+    "title": "Dług wystrzelony w kosmos",
+    "author": "Mentzen",
+    "source": "mentzen-2025",
+    "context": "Skok zadłużenia opisany jako lot kosmiczny. To hiperbola użyta przeciw polityce transferów społecznych.",
+    "quote": "dług wybił w kosmos"
+  },
+  {
+    "id": "mentzen-alternatywa",
+    "title": "Albo bankructwo, albo likwidacja socjalu",
+    "author": "Mentzen",
+    "source": "mentzen-2025",
+    "context": "Końcowa wypowiedź zawęża wybór do dwóch rozwiązań. To polityczna alternatywa mówcy; sama nie dowodzi, że brak innych wariantów budżetu.",
+    "quote": "Innej możliwości nie ma"
+  },
+  {
+    "id": "mentzen-plaska",
+    "title": "Ekonomiczne płaskoziemstwo",
+    "author": "Mentzen",
+    "source": "mentzen-2023",
+    "context": "Mentzen porównuje zdziwienie długiem po poparciu transferów do odrzucania wiedzy o kształcie Ziemi.",
+    "quote": "ekonomiczne płaskoziemstwo"
+  },
+  {
+    "id": "mentzen-mlotek",
+    "title": "Młotek i bolący palec",
+    "author": "Mentzen",
+    "source": "mentzen-2023",
+    "context": "Bicie się w palec obrazuje zarzucaną politykom sprzeczność między decyzjami wydatkowymi a zaskoczeniem ich skutkami."
+  },
+  {
+    "id": "mentzen-spirala",
+    "title": "Spirala rozdawnictwa",
+    "author": "Mentzen",
+    "source": "mentzen-2023",
+    "context": "Kolejne programy i rywalizacja wyborcza opisane jako spirala. To interpretacja polityki wydatkowej przedstawiona przez mówcę.",
+    "quote": "spirali rozdawnictwa"
+  },
+  {
+    "id": "mentzen-banda",
+    "title": "Jazda po bandzie bez zapasu",
+    "author": "Mentzen",
+    "source": "mentzen-2023",
+    "context": "Budżet opisany jako ryzykowna jazda bez marginesu bezpieczeństwa. Ostrzeżenie dotyczy przyszłego pogorszenia warunków gospodarczych.",
+    "quote": "Jedziemy po bandzie"
+  },
+  {
+    "id": "mentzen-grecja",
+    "title": "Grecka ścieżka programów socjalnych",
+    "author": "Mentzen",
+    "source": "mentzen-2023",
+    "context": "Mentzen wiąże grecki kryzys z konkurencją na świadczenia. Analiza OKO.press kwestionuje wystarczalność takiego wyjaśnienia i porównania z Polską.",
+    "analysis": "mentzen-kontrapunkt"
   }
 ];

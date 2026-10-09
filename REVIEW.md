@@ -44,3 +44,11 @@ Archiwum dokumentuje użycie metafor, nie trafność diagnoz ani bieżące ryzyk
 Hosting projektu przeniesiono do publicznego repozytorium `Maciorex/fiskalny-alarm`. Build przygotowuje katalog `docs` dla Pages oraz samodzielny plik w `dist`. Dodano licencję MIT dla kodu i autorskich tekstów, z wyłączeniem cytatów osób trzecich.
 
 Publikacja odbywa się automatycznie po wypchnięciu gałęzi `main`, ze źródła `/docs`. Pierwsze wdrożenie potwierdzono statusem `built` w API Pages, a publiczny adres otwarto i sprawdzono w przeglądarce. HTTPS jest wymuszone.
+
+## Rozszerzenie o Mentzena — do zatwierdzenia w PR
+
+Dodano 13 źródłowych motywów i 13 autorskich scenek: katalog ma teraz 61 motywów, 85 scenek i 16 320 kombinacji. Cztery dodatkowe publikacje obejmują trzy wystąpienia oraz osobną analizę ograniczeń porównania greckiego. Najnowszy tekst z 8 października 2026 jest transkrypcją ugrupowania, dwa starsze są urzędowymi stenogramami.
+
+Dodano osobny filtr Mentzena i właściwe autorstwo inspiracji. Liczby w opisie metodologii są obliczane z katalogu. Test 4200 losowań przeszedł; sprawdza również poprawność powiązań z analizą krytyczną i łączny limit cytatów. Pełnego testu renderowanego dla tej nieopublikowanej zmiany nie wykonano.
+
+Dodano instrukcję współpracy i CODEOWNERS wskazujące Maciorex. Zmiany pozostają w pull requeście; nie są opublikowane na publicznej stronie przed decyzją właściciela.

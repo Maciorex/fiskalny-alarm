@@ -2,12 +2,12 @@
 
 Satyryczny generator komunikatów o nadchodzącej katastrofie długu publicznego. Fikcyjny Instytut Paniki Fiskalnej produkuje alarmy, a osobne archiwum pokazuje udokumentowane inspiracje z debaty ekonomicznej.
 
-- 72 autorskie scenki, 3 poziomy tonu, 6 kierunków katastrofy i tryb mieszany.
-- 13 824 kombinacje (72 × 8 wstępów × 8 puent × 3 poziomy).
-- 48 motywów i analogii w 22 źródłach z lat 2003–2026, z kontekstem oraz krótkimi cytatami.
+- 85 autorskich scenek, 3 poziomy tonu, 6 kierunków katastrofy i tryb mieszany.
+- 16 320 kombinacji (85 × 8 wstępów × 8 puent × 3 poziomy).
+- 61 motywów i analogii w 26 źródłach z lat 2003–2026, z kontekstem oraz krótkimi cytatami.
 - Przycisk „Losowe ustawienia” losuje kierunek katastrofy oraz dramatyzm i od razu generuje nowy alarm.
 - Historia ostatnich 100 komunikatów w bieżącej sesji; kopiowanie zawsze dodaje oznaczenie satyry.
-- Filtr autora i wyszukiwanie w katalogu inspiracji.
+- Filtr autora (Balcerowicz, Dudek, Mentzen, inni) i wyszukiwanie w katalogu inspiracji.
 - Całość działa po stronie przeglądarki. Brak API, backendu, analityki, zewnętrznych fontów i zależności produkcyjnych.
 
 ## Uruchomienie i edycja
@@ -34,6 +34,10 @@ Strona: https://maciorex.github.io/fiskalny-alarm/
 GitHub Pages publikuje katalog `docs` z gałęzi `main`. Build zapisuje identyczny, samodzielny HTML w `dist/index.html` i `docs/index.html`; plik `docs/.nojekyll` wyłącza przetwarzanie przez Jekyll. Hosting nie wymaga własnego serwera, usług API ani instalacji zależności.
 
 Przy zmianach w źródłach uruchom `node build.mjs` oraz `node verify.mjs`, a następnie zacommituj źródła i wygenerowane pliki. GitHub automatycznie wdroży opublikowany katalog po pushu do `main`. Pierwsze włączenie Pages wymaga ustawienia źródła `main /docs`; kolejne publikacje odbywają się bez ręcznego deploya.
+
+## Współpraca
+
+Chcesz dorzucić metaforę lub żart? Zobacz [CONTRIBUTING.md](CONTRIBUTING.md). Zmiany trafiają przez pull requesty, a właściciel decyduje o ich połączeniu. `main` jest chronione.
 
 ## Open source
 

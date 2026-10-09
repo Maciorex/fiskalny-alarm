@@ -10,18 +10,19 @@ const archive=node('div');
 const toolbar=node('div','archive-toolbar');
 const search=node('input');search.type='search';search.placeholder='Szukaj metafory, np. Grecja, garb, sepsa…';search.setAttribute('aria-label','Szukaj w archiwum metafor');
 const author=node('select');author.setAttribute('aria-label','Filtruj według autora');
-for(const [value,label] of [['all','Wszyscy autorzy'],['Balcerowicz','Leszek Balcerowicz'],['Dudek','Sławomir Dudek'],['Inni','Inni autorzy']]){const opt=node('option','',label);opt.value=value;author.append(opt);}
+for(const [value,label] of [['all','Wszyscy autorzy'],['Balcerowicz','Leszek Balcerowicz'],['Dudek','Sławomir Dudek'],['Mentzen','Sławomir Mentzen'],['Inni','Inni autorzy']]){const opt=node('option','',label);opt.value=value;author.append(opt);}
 toolbar.append(search,author);const archiveCount=node('p','archive-count');archiveCount.setAttribute('role','status');
 const grid=node('div','archive-grid');archive.append(toolbar,archiveCount,grid);
 const method=node('div','method');method.append(node('h2','','Co jest prawdziwe, a co wymyślone?'));
 for(const text of [
-  'Generator składa 72 autorskie scenki z wstępami i puentami: 13 824 możliwe kombinacje. Wszystkie są satyrą. Nazwiska pojawiają się wyłącznie przy udokumentowanych inspiracjach.',
-  'Archiwum obejmuje 48 motywów i analogii z 22 publikacji z lat 2003–2026. Kilka motywów to rozwinięcia jednej wypowiedzi. Cytaty oznaczono osobno; pozostałe opisy są omówieniami. Research zamknięto 9 października 2026. Datę pokazujemy tam, gdzie udało się ją potwierdzić w źródle.',
+  'Generator składa '+bodies.length+' autorskich scenek z wstępami i puentami: '+(bodies.length*intros.reduce((sum,list,i)=>sum+list.length*endings[i].length,0)).toLocaleString('pl-PL')+' możliwych kombinacji. Wszystkie są satyrą. Nazwiska pojawiają się wyłącznie przy udokumentowanych inspiracjach.',
+  'Archiwum obejmuje '+motifs.length+' motywów i analogii. Research zawiera '+sources.length+' publikacji z lat 2003–2026, w tym analizę krytyczną wskazaną osobno na karcie. Kilka motywów to rozwinięcia jednej wypowiedzi lub odrębne użycia podobnego obrazu przez różnych autorów. Cytaty oznaczono osobno; pozostałe opisy są omówieniami. Research zamknięto 9 października 2026. Datę pokazujemy tam, gdzie udało się ją potwierdzić w źródle.',
   'Dramatyczna metafora nie dowodzi trafności prognozy. Dudek w rozmowach wskazuje także mocniejsze fundamenty Polski i brak kryzysu „tu i teraz”. Balcerowicz w Radiu ZET 6 października 2026 nie potwierdza katastrofy rozumianej jako całkowite załamanie.',
-  'Ważne autorstwo: kulę u nogi w debacie o OFE przywołał Rostowski. Balcerowicz przypisuje rękę w cudzej kieszeni Erhardowi. Pociąg zadłużenia w materiale DGP jest parafrazą redakcji. Titanic w generatorze to nasz żart rozwijający autorską metaforę transatlantyku Dudka.'
+  'Ważne autorstwo: kulę u nogi w debacie o OFE przywołał Rostowski. Balcerowicz przypisuje rękę w cudzej kieszeni Erhardowi. Pociąg zadłużenia w materiale DGP jest parafrazą redakcji. Dudek użył transatlantyku; Mentzen 8 października 2026 mówił dosłownie o Titanicu. Generatorowe żarty pozostają naszymi tekstami.',
+  'Mentzen: wystąpienia z 2023 i 2025 roku sprawdzono w urzędowych stenogramach. Tekst z 8 października 2026 pochodzi z transkrypcji opublikowanej przez Konfederację. Udokumentowanie metafory nie potwierdza wyliczeń ani zarzutów mówcy. Teza „bankructwo albo likwidacja socjalu” jest jego politycznym zawężeniem wyboru, nie dowodem braku innych wariantów. Analiza OKO.press wskazuje ograniczenia analogii greckiej; odnosi się do wywiadu ze stycznia 2026, nie do wczorajszego wystąpienia.'
 ])method.append(node('p','',text));
 archive.append(method);$('archive-content').append(archive);
-function authorName(m){if(m.author==='Balcerowicz')return 'Leszek Balcerowicz';if(m.author==='Dudek')return 'dr Sławomir Dudek';return m.source==='kula'?'Jacek Rostowski':'Mateusz Morawiecki';}
+function authorName(m){if(m.author==='Balcerowicz')return 'Leszek Balcerowicz';if(m.author==='Dudek')return 'dr Sławomir Dudek';if(m.author==='Mentzen')return 'Sławomir Mentzen';return m.source==='kula'?'Jacek Rostowski':'Mateusz Morawiecki';}
 function renderArchive(){
   const term=search.value.trim().toLocaleLowerCase('pl');
   const items=motifs.filter(m=>(author.value==='all'||m.author===author.value)&&[m.title,m.context,authorName(m),sourceById.get(m.source).publisher].join(' ').toLocaleLowerCase('pl').includes(term));
@@ -34,7 +35,9 @@ function renderArchive(){
     card.append(node('p','',m.context),node('div','attribution',authorName(m)));
     const date=s.date?new Date(s.date+'T12:00:00Z').toLocaleDateString('pl-PL',{timeZone:'Europe/Warsaw'}):'data nieustalona';
     const link=node('a','source-link',s.publisher+' · '+date+' · Czytaj źródło');link.href=s.url;link.target='_blank';link.rel='noopener noreferrer';link.title=s.title;
-    card.append(link,node('div','kind',s.type+(s.dateNote?' · '+s.dateNote:'')));grid.append(card);
+    card.append(link,node('div','kind',s.type+(s.dateNote?' · '+s.dateNote:'')));
+    if(m.analysis){const analysis=sourceById.get(m.analysis);const extra=node('a','source-link','Analiza ograniczeń porównania · '+analysis.publisher);extra.href=analysis.url;extra.target='_blank';extra.rel='noopener noreferrer';card.append(extra);}
+    grid.append(card);
   }
   if(!items.length)grid.append(node('div','empty','Brak takich motywów. Spróbuj innego słowa albo zmień autora.'));
 }
