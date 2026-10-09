@@ -4,7 +4,7 @@ import {sources,motifs} from './src/data.mjs';
 import {bodies,themes,intros,endings,generateAlarm,clipboardText} from './src/engine.mjs';
 const unique=items=>new Set(items.map(x=>x.id)).size===items.length;
 assert(unique(sources)&&unique(motifs)&&unique(bodies),'IDs must be unique');
-for(const m of motifs)assert(sources.some(s=>s.id===m.source),'Every motif must have an existing source');
+for(const m of motifs){assert(sources.some(s=>s.id===m.source),'Every motif must have an existing source');if(m.analysis)assert(sources.some(s=>s.id===m.analysis),'Analysis link must have an existing source');}
 for(const b of bodies){assert(themes.includes(b.theme));if(b.motif)assert(motifs.some(m=>m.id===b.motif));}
 for(const s of sources){assert.equal(new URL(s.url).protocol,'https:');if(s.date)assert(s.date<='2026-10-09');}
 for(const s of sources){const words=motifs.filter(m=>m.source===s.id&&m.quote).flatMap(m=>m.quote.trim().split(/\s+/)).length;assert(words<=25,'Quoted words per source exceed limit: '+s.id);}

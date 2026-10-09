@@ -6,7 +6,7 @@ Stan na 9 października 2026. Celem jest udokumentowanie retorycznych obrazów, 
 
 Przeszukano prasę ekonomiczną, transkrypcje radiowe, teksty FOR i IFP oraz relacje SGH. Weryfikacja obejmowała rozpoznanie rzeczywistego mówcy, odczyt kontekstu i sprawdzenie daty w publikacji. Same wyniki wyszukiwania, komentarze czytelników i nagłówki bez potwierdzającej treści nie wystarczały do przypisania cytatu.
 
-Korpus: **22 publikacje, 48 motywów i analogii**, obejmujące lata 2003–2026. To katalog użytecznych inspiracji, nie kompletny korpus wszystkich wystąpień. Rozwinięcia jednej analogii (np. samochód: opony, poduszki, warunki jazdy) są osobnymi motywami do generatora, a nie niezależnymi ostrzeżeniami. Powtarzającej się kuli śnieżnej nie naliczano ponownie z każdego artykułu.
+Korpus: **26 publikacji, 61 motywów i analogii** (25 źródeł motywów i jedna dodatkowa analiza krytyczna), obejmujące lata 2003–2026. To katalog użytecznych inspiracji, nie kompletny korpus wszystkich wystąpień. Rozwinięcia jednej analogii (np. samochód: opony, poduszki, warunki jazdy) są osobnymi motywami do generatora, a nie niezależnymi ostrzeżeniami. Powtórzenie metafory u innego autora ma osobną kartę z autorstwem; nie oznacza niezależnego zjawiska ani dowodu trafności prognozy.
 
 Dokładne krótkie cytaty w aplikacji oznaczono etykietą „KRÓTKI CYTAT”. Pozostałe karty to nasze omówienia. Daty nieustalone pozostawiono puste; nie zastąpiono ich zgadywanym rokiem. Przy Polskim Radiu z lutego 2012 podano widoczną datę aktualizacji.
 
@@ -174,6 +174,34 @@ Motywy: Lawina kosztów obsługi długu.
 
 ## Warstwa autorska
 
-72 scenki napisano od początku dla tego projektu. Wstępy i puenty tworzą trzy tony: spokojny niepokój, rozmowa telewizyjna, pełna apokalipsa. Hasła nie są stylizowane na autoryzowane wypowiedzi konkretnych osób, nie zawierają ich podpisów i nie mają statusu cytatu. Każde skopiowanie dodaje wyjaśnienie, że tekst jest wymyślony.
+85 scenek napisano od początku dla tego projektu. Wstępy i puenty tworzą trzy tony: spokojny niepokój, rozmowa telewizyjna, pełna apokalipsa. Hasła nie są stylizowane na autoryzowane wypowiedzi konkretnych osób, nie zawierają ich podpisów i nie mają statusu cytatu. Każde skopiowanie dodaje wyjaśnienie, że tekst jest wymyślony.
 
 Projekt korzysta wyłącznie z danych przygotowanych w researchu. Nie używa modelu ani płatnego API w czasie działania. Rozszerzenie katalogu wymaga świadomej edycji źródeł i ponownej publikacji.
+
+## Uzupełnienie: Sławomir Mentzen
+
+13 kart i 13 autorskich scenek dodano 9 października 2026. Wystąpienie z 8 października 2026 to materiał wskazany jako najnowszy; zapis ugrupowania oznaczono jako nieurzędowy. Starsze wypowiedzi pochodzą ze stenogramów Sejmu. Nie przedstawiamy zarzutów mówcy jako ustaleń projektu.
+
+### Konfederacja — 8 października 2026
+
+[Transkrypcja i nagranie](https://konfederacja.pl/plyniemy-na-gore-lodowa-a-wy-cieszycie-sie-i-klaszczecie/).
+
+Motywy: słoń na sali, góra lodowa, orkiestra na Titanicu, katastrofa ujawniona w dokumentach. Liczb i oskarżeń dotyczących prognoz nie przyjęto jako zweryfikowanych danych. Titanic występuje tu dosłownie u Mentzena; wcześniejszy transatlantyk należy do Dudka.
+
+### Sejm RP — 9 października 2025
+
+[Urzędowy stenogram](https://api.sejm.gov.pl/sejm/term10/proceedings/42/2025-10-09/transcripts/008), 42. posiedzenie, dzień 3, wypowiedź 8.
+
+Motywy: ojcowie zadłużenia, kula śnieżna, lot długu w kosmos i wybór między bankructwem a likwidacją socjalu. Ostatnia teza zawęża rozwiązania politycznie; sam fragment nie dowodzi, że budżet nie ma innych wariantów.
+
+### Sejm RP — 21 grudnia 2023
+
+[Urzędowy stenogram](https://api.sejm.gov.pl/sejm/term10/proceedings/1/2023-12-21/transcripts/14), 1. posiedzenie, dzień 13, wypowiedź 14.
+
+Motywy: płaskoziemstwo, młotek i palec, spirala, jazda po bandzie, grecka ścieżka. Analogia geograficzna jest stanowiskiem mówcy; nie stanowi prognozy aplikacji.
+
+### Kontrapunkt: OKO.press — 17 stycznia 2026
+
+[Adam Suraj: analiza analogii greckiej](https://oko.press/mentzen-dlug-grecja-debunking).
+
+Tekst polemizuje z wywiadem Mentzena u Żurnalisty, nie z sejmowym wystąpieniem z października. Wskazuje znaczenie dochodów, wiarygodności statystyk i waluty oraz ograniczenia wyjaśnienia kryzysu samymi świadczeniami. W aplikacji ma osobny link jako analiza, nie źródło cytatu ani karta wypowiedzi Mentzena. Nie wykonano pełnego audytu jego wszystkich danych liczbowych.

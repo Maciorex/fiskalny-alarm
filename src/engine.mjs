@@ -502,6 +502,97 @@ export const bodies = [
     "diagnosis": "Budżetologia stosowana",
     "text": "Przyszłe pokolenia poprosiły o anulowanie subskrypcji długu. Regulamin nie przewiduje wypowiedzenia.",
     "motif": null
+  },
+  {
+    "id": "b73",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Słoń fiskalny dostał miejsce na sali sejmowej. Koszt karmienia wpisano w wydatki poza budżetem.",
+    "motif": "mentzen-slon"
+  },
+  {
+    "id": "b74",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja i transport",
+    "text": "Budżet płynie na górę lodową. Kapitan zapewnia, że zderzenie poprawi przejrzystość kadłuba.",
+    "motif": "mentzen-lodowa"
+  },
+  {
+    "id": "b75",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja i transport",
+    "text": "Orkiestra fiskalna gra na Titanicu. Bis będzie możliwy po podniesieniu limitu zadłużenia.",
+    "motif": "mentzen-titanic"
+  },
+  {
+    "id": "b76",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Katastrofa dostała numer załącznika. Od tej chwili można ją spokojnie przesłać do konsultacji międzyresortowych.",
+    "motif": "mentzen-dokumenty"
+  },
+  {
+    "id": "b77",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Ukryty dług ma trzech ojców. Każdy twierdzi, że alimenty powinien płacić następny rząd.",
+    "motif": "mentzen-ojcowie"
+  },
+  {
+    "id": "b78",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły i katastrofy",
+    "text": "Kula śnieżna długu stara się o status gminy. Niedługo sama zacznie emitować obligacje.",
+    "motif": "mentzen-snieg"
+  },
+  {
+    "id": "b79",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły i katastrofy",
+    "text": "Dług wszedł na orbitę. Minister ogłosił sukces krajowego programu kosmicznego.",
+    "motif": "mentzen-kosmos"
+  },
+  {
+    "id": "b80",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "W formularzu są tylko dwa pola: bankructwo albo koniec socjalu. Trzecią opcję usunięto dla wygody użytkownika.",
+    "motif": "mentzen-alternatywa"
+  },
+  {
+    "id": "b81",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Budżet jest płaski. Deficyt właśnie spadł z jego krawędzi i prosi o ratunkową nowelizację.",
+    "motif": "mentzen-plaska"
+  },
+  {
+    "id": "b82",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Finanse publiczne uderzyły się młotkiem w palec. Komisja zamówiła większy młotek i raport o niespodziewanym bólu.",
+    "motif": "mentzen-mlotek"
+  },
+  {
+    "id": "b83",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły i katastrofy",
+    "text": "Spirala obietnic dostała windę. Teraz można zadłużać się bez wysiłku.",
+    "motif": "mentzen-spirala"
+  },
+  {
+    "id": "b84",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja i transport",
+    "text": "Budżet jedzie po bandzie. Margines bezpieczeństwa sprzedano, żeby sfinansować nową bandę.",
+    "motif": "mentzen-banda"
+  },
+  {
+    "id": "b85",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Nawigacja fiskalna zna tylko jedną trasę: Ateny. Każde świadczenie traktuje jako kolejny zjazd z autostrady.",
+    "motif": "mentzen-grecja"
   }
 ];
 export const intros = [
