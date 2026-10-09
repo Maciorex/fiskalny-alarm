@@ -27,6 +27,7 @@ Lekki generator, wybór motywu i poziomu dramatyzmu, historia ostatnich 100 alar
 
 9 października 2026 sprawdzono działającą stronę https://maciorex.github.io/fiskalny-alarm/ w przeglądarce:
 
+- Dodany przycisk „Losowe ustawienia” sprawdzono na publicznej stronie: dwa kolejne kliknięcia ustawiły `grecja / 0`, następnie `medycyna / 1`, wygenerowały pasujące teksty i dopisały wyniki do historii.
 - Losowanie zmienia komunikat i dopisuje go do historii; przycisk powrotu przechodzi do poprzedniego wyniku.
 - Archiwum otwiera się z nawigacji. Wyszukiwanie `sepsa` pozostawia jeden właściwy motyw z linkiem do źródła.
 - Przycisk kopiowania zgłasza sukces. Test przeglądarki nie potwierdził zawartości systemowego schowka; oznaczenie satyry w kopiowanym tekście sprawdzają testy logiki.
