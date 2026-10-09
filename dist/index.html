@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fiskalny Alarm — generator fiskalnej apokalipsy</title>
+<meta name="description" content="Grecja już za rogiem? Losuj satyryczne komunikaty o długu publicznym i poznaj prawdziwe metafory debaty ekonomicznej.">
+<meta name="theme-color" content="#111a27">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111a27'/%3E%3Cpath d='M16 4L30 28H2Z' fill='%23ffd449'/%3E%3Cpath d='M16 12v8' stroke='%23111a27' stroke-width='3'/%3E%3Ccircle cx='16' cy='24' r='1.7' fill='%23111a27'/%3E%3C/svg%3E">
+<style>:root{color-scheme:dark;--bg:#111a27;--surface:#192434;--line:#344052;--text:#f5f5f0;--muted:#aeb9c8;--yellow:#ffd449;--ink:#15202b;--paper:#f1f3f4;--orange:#ff986b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5}button,select,input{font:inherit}button,select{cursor:pointer}button,a,select,input{ -webkit-tap-highlight-color:transparent}button{color:inherit}a{color:inherit}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:5px}button:disabled{cursor:default;opacity:.35}button{border:0}button:hover:not(:disabled){filter:brightness(1.1)}[hidden]{display:none!important}.skip{position:absolute;top:-80px;left:20px;z-index:10;background:var(--yellow);color:var(--ink);padding:12px}.skip:focus{top:12px}.edition{display:flex;justify-content:space-between;background:var(--yellow);color:var(--ink);padding:9px max(24px,calc((100vw - 1240px)/2));font-family:monospace;font-size:12px;font-weight:700;letter-spacing:.09em}.header,main,footer{max-width:1240px;margin:auto}.header{padding:30px 0;display:flex;align-items:center;gap:40px;border-bottom:1px solid var(--line)}.brand{text-decoration:none;display:flex;gap:12px;align-items:center;font-weight:900;line-height:.94;font-size:23px;letter-spacing:-.05em}.brand-mark{background:var(--yellow);color:var(--ink);width:45px;height:47px;font-size:37px;line-height:47px;text-align:center;transform:skew(-7deg)}.brand-period{color:var(--yellow)}.header-note{font-size:14px;line-height:1.5}.header-note span{color:var(--muted)}nav{margin-left:auto;display:flex;gap:24px}.nav-button{background:transparent;padding:12px 0;color:var(--muted);font-size:14px;border-bottom:2px solid transparent}.nav-button.active{color:var(--yellow);border-color:var(--yellow)}main{padding:46px 0 0}.eyebrow{font-family:monospace;font-size:12px;letter-spacing:.1em;font-weight:700}.intro{margin-bottom:32px}.intro .eyebrow{color:var(--yellow);margin:0 0 14px}h1{font-size:clamp(40px,5vw,65px);line-height:1.03;letter-spacing:-.055em;margin:0;font-weight:900}h1 span{color:var(--yellow)}.intro>p:last-child,.archive-heading>p:last-child{color:var(--muted);margin:18px 0 0}.workspace{display:grid;grid-template-columns:320px 1fr;gap:24px}.controls{background:var(--surface);padding:26px;border:1px solid var(--line)}.control-heading{display:flex;justify-content:space-between;margin-bottom:26px;color:var(--muted)}.control-heading>span:last-child{font-family:monospace;font-size:12px}.label{font-size:14px;font-weight:700;display:block;margin-bottom:10px}select{width:100%;padding:14px 10px;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:0;font-size:14px}fieldset{border:0;padding:0;margin:26px 0 24px;min-width:0}legend{padding:0}.level{display:flex;align-items:center;gap:10px;margin-top:8px;padding:12px 10px;border:1px solid var(--line);cursor:pointer}.level:has(input:checked){border-color:var(--yellow);background:#ffd4490b}.level input{accent-color:var(--yellow);width:16px;height:16px;flex-shrink:0}.level strong{font-size:14px;display:block}.level small{font-size:12px;color:var(--muted);display:block}.level-number{margin-left:auto;font-family:monospace;font-size:12px;color:var(--muted)}.generate{background:var(--yellow);color:var(--ink);font-weight:800;width:100%;padding:16px 10px;display:flex;justify-content:center;gap:10px;align-items:center}.generate>span{font-size:23px;line-height:1}.keyboard-hint{font-size:12px;text-align:center;color:var(--muted);margin:14px 0 0}kbd{border:1px solid var(--line);padding:2px 4px;font-size:11px}.bulletin{background:var(--paper);color:var(--ink);padding:30px 36px;display:flex;flex-direction:column;position:relative;border-top:6px solid var(--yellow)}.bulletin-top{display:flex;align-items:center;justify-content:space-between;gap:14px;font-family:monospace;font-size:12px;flex-wrap:wrap}.status-tag{border:1px solid #88919a;padding:5px 9px;font-size:11px;letter-spacing:.07em}.quote-wrap{flex:1;padding:18px 0 30px}.quote-mark{font-family:Georgia,serif;font-size:95px;line-height:.7;color:#adb4bb;display:block;height:55px}.result{font-size:clamp(25px,3vw,38px);font-weight:800;line-height:1.23;letter-spacing:-.035em;margin:14px 0 0;overflow-wrap:anywhere}.bulletin-bottom{border-top:1px solid #c4cad0;padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:16px}.bulletin-bottom .eyebrow{font-size:11px;color:#546170}.bulletin-bottom p{margin:5px 0 0;font-size:14px;font-weight:700}.copy-button{font-size:14px;background:var(--ink);color:white;padding:12px 16px;white-space:nowrap}.inspiration{font-size:12px;line-height:1.6;color:#4b5866;margin-top:18px}.inspiration a{text-underline-offset:3px}.history-bar{display:flex;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:center}.history-bar>div:first-child{display:flex;gap:18px;align-items:center}.history-bar .eyebrow{color:var(--muted)}#history-count{font-size:12px;font-family:monospace}.history-bar button{background:transparent;border:1px solid var(--line);padding:8px 14px;font-size:12px;margin-left:8px}.research-strip{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:25px 0}.research-strip p{color:var(--muted);font-size:14px;margin:0}.research-strip strong{color:var(--text);font-family:monospace;font-size:24px;margin-right:8px}.research-strip button{background:transparent;color:var(--yellow);font-size:14px;text-decoration:underline;text-underline-offset:5px}footer{border-top:1px solid var(--line);padding:24px 0 36px;font-size:12px;display:flex;gap:35px;justify-content:space-between}footer>span{flex-shrink:0}footer p{margin:0;max-width:560px;color:var(--muted)}.muted{color:var(--muted)}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--yellow);color:var(--ink);padding:12px 22px;z-index:20;font-size:14px;box-shadow:0 6px 30px #0005;max-width:90vw}.archive-heading{margin-bottom:28px}.archive-heading .eyebrow{color:var(--yellow)}.archive-toolbar{display:flex;gap:12px;margin:28px 0 16px}.archive-toolbar input{flex:1;min-width:0;background:var(--surface);border:1px solid var(--line);color:var(--text);padding:12px 16px}.archive-toolbar select{width:210px}.archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 32px}.source-card{background:var(--surface);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column}.source-card .card-meta{display:flex;gap:8px;justify-content:space-between;color:var(--muted);font-family:monospace;font-size:12px}.source-card h2{font-size:23px;line-height:1.15;letter-spacing:-.035em;margin:18px 0 12px}.source-card blockquote{color:var(--yellow);font-size:16px;margin:0 0 12px;border-left:2px solid var(--yellow);padding-left:12px}.source-card p{color:var(--muted);font-size:14px;margin:0 0 18px}.source-card .attribution{font-size:14px;font-weight:700;margin-top:auto}.source-card .source-link{font-size:12px;color:var(--yellow);margin:10px 0 0;text-underline-offset:4px;line-height:1.6}.source-card .kind{font-size:12px;color:var(--muted);margin-top:6px}.method{border:1px solid var(--line);padding:25px;margin:20px 0 35px}.method h2{font-size:20px;margin:0 0 12px}.method p{font-size:14px;color:var(--muted);max-width:900px;margin:10px 0}.empty{border:1px solid var(--line);padding:30px;grid-column:1/-1;color:var(--muted)}.archive-count{font-size:12px;font-family:monospace;color:var(--muted)}.copy-fallback{background:white;color:var(--ink);width:100%;margin-top:15px;min-height:100px}.source-card:target{border-color:var(--yellow)}
+@media(min-width:1500px){main{padding-top:55px}.intro{margin-bottom:38px}}@media(max-width:1300px){.header,main,footer{margin-left:32px;margin-right:32px}}@media(max-width:950px){.header-note{display:none}.workspace{grid-template-columns:280px 1fr;gap:16px}.controls{padding:20px}.bulletin{padding:24px}.archive-grid{grid-template-columns:repeat(2,1fr)}footer{flex-direction:column;gap:12px}.history-bar .eyebrow{font-size:11px}}@media(max-width:700px){.edition{padding:8px 20px}.edition span:last-child{display:none}.header,main,footer{margin-left:20px;margin-right:20px}.header{padding:23px 0;gap:16px}.brand{font-size:19px;gap:9px}.brand-mark{width:35px;height:39px;line-height:39px;font-size:30px}nav{gap:16px}.nav-button{font-size:12px}.intro{margin-bottom:25px}.workspace{display:flex;flex-direction:column}.bulletin{order:-1;min-height:385px;padding:23px}.quote-wrap{padding:20px 0 24px}.result{font-size:29px}.controls{padding:22px}.control-heading{margin-bottom:20px}fieldset{margin:22px 0}.keyboard-hint{display:none}.bulletin-bottom{flex-wrap:wrap;gap:12px}.history-bar{align-items:flex-start;flex-direction:column}.history-bar>div:first-child{gap:10px;flex-wrap:wrap}.history-bar>div:last-child{align-self:flex-end}.research-strip{flex-wrap:wrap;gap:15px;padding:25px 0}.research-strip p{font-size:12px}.research-strip strong{font-size:20px}.research-strip button{padding:0}.archive-grid{grid-template-columns:1fr}.archive-toolbar{flex-direction:column}.archive-toolbar select{width:100%}.archive-toolbar input{width:100%}.archive-heading h1{font-size:43px}main{padding-top:32px}footer>span{flex-shrink:1}.source-card h2{font-size:24px}}@media(prefers-reduced-motion:no-preference){.result{animation:appear .18s ease-out}@keyframes appear{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}} @media print{body{background:white;color:black}.edition,.header,aside,.history-bar,.research-strip,footer,.copy-button,.inspiration,.toast{display:none}main{margin:0}.workspace{display:block}.bulletin{border:1px solid #999}.intro h1 span{color:black}}
+</style><script type="module">const sources = [
+  {
+    "id": "garb",
+    "title": "Balcerowicz uruchomił licznik długu",
+    "publisher": "Rzeczpospolita",
+    "date": "2010-09-28",
+    "url": "https://www.rp.pl/finanse/art14975421-balcerowicz-uruchomil-licznik-dlugu",
+    "type": "Relacja z wypowiedzi"
+  },
+  {
+    "id": "mikolaj",
+    "title": "Balcerowicz o przyczynach kryzysów gospodarczych",
+    "publisher": "Rzeczpospolita",
+    "date": "2014-05-09",
+    "url": "https://www.rp.pl/opinie-ekonomiczne/art12493191-balcerowicz-o-przyczynach-krzysow-gospodarczych",
+    "type": "Publikacja wypowiedzi"
+  },
+  {
+    "id": "argentyna",
+    "title": "Ochrona przed krótkowzrocznością",
+    "publisher": "Wprost",
+    "date": "2004-02-29",
+    "url": "https://www.wprost.pl/tygodnik/56715/balcerowicz-wprost-ochrona-przed-krotkowzrocznoscia.html",
+    "type": "Tekst autorski"
+  },
+  {
+    "id": "kuracja",
+    "title": "Dwa cele",
+    "publisher": "Wprost",
+    "date": "2003-07-20",
+    "url": "https://www.wprost.pl/tygodnik/46552/balcerowicz-wprost-dwa-cele.html",
+    "type": "Tekst autorski"
+  },
+  {
+    "id": "strus",
+    "title": "Rozmowa z prof. Leszkiem Balcerowiczem",
+    "publisher": "Polskie Radio",
+    "date": "2012-02-15",
+    "url": "https://www.polskieradio.pl/13/11465/Artykul/538949,rozmowa-z-prof-leszkiem-balcerowiczem",
+    "type": "Transkrypcja rozmowy",
+    "dateNote": "Data aktualizacji widoczna w źródle"
+  },
+  {
+    "id": "zdrowie",
+    "title": "O pomyśle wyłączenia licznika długu publicznego",
+    "publisher": "FOR / TVN CNBC",
+    "date": "2012-04-26",
+    "url": "https://for.org.pl/2012/04/26/prof-leszek-balcerowicz-o-pomysle-wylaczenia-licznika-dlugu-publicznego/",
+    "type": "Transkrypcja rozmowy"
+  },
+  {
+    "id": "statek",
+    "title": "Konstytucyjny limit albo kurs na lodową górę",
+    "publisher": "Rzeczpospolita",
+    "date": "2020-09-10",
+    "url": "https://www.rp.pl/opinie-ekonomiczne/art533451-slawomir-dudek-konstytucyjny-limit-albo-kurs-na-lodowa-gore",
+    "type": "Tekst autorski"
+  },
+  {
+    "id": "sepsa",
+    "title": "Jak daleko, jak blisko Polsce do kryzysu greckiego?",
+    "publisher": "Miesięcznik Finansowy BANK",
+    "date": "2023-01-11",
+    "url": "https://bank.pl/slawomir-dudek-jak-daleko-jak-blisko-polsce-do-kryzysu-greckiego/",
+    "type": "Wywiad"
+  },
+  {
+    "id": "wyscig",
+    "title": "Rząd rozdaje pieniądze emerytom. Grecki wyścig na populizm",
+    "publisher": "Business Insider",
+    "date": "2022-02-11",
+    "url": "https://businessinsider.com.pl/gospodarka/rzad-rozdaje-pieniadze-emerytom-grecki-wyscig-na-populizm/rbw2j6p",
+    "type": "Przytoczony wpis z Twittera"
+  },
+  {
+    "id": "palacz",
+    "title": "Polska uzależniła się od długu",
+    "publisher": "Forbes",
+    "date": "2025-07-17",
+    "url": "https://www.forbes.pl/gospodarka/slawomir-dudek-polskie-finanse-publiczne-pogarszaja-sie-w-szybkim-tempie/bc4zmrm",
+    "type": "Wywiad"
+  },
+  {
+    "id": "linia",
+    "title": "Projekt budżetu na 2026 r. ryzykowny. Taniec na linie",
+    "publisher": "Rzeczpospolita",
+    "date": "2025-09-04",
+    "url": "https://www.rp.pl/budzet-i-podatki/art42950261-slawomir-dudek-ifp-projekt-budzetu-na-2026-r-ryzykowny-taniec-na-linie",
+    "type": "Wywiad"
+  },
+  {
+    "id": "opony",
+    "title": "Finanse publiczne jadą na łysych oponach",
+    "publisher": "Rzeczpospolita",
+    "date": "2026-09-29",
+    "url": "https://www.rp.pl/budzet-i-podatki/art45153911-slawomir-dudek-finanse-publiczne-jada-na-lysych-oponach-a-przed-nami-ostre-zakrety",
+    "type": "Wywiad"
+  },
+  {
+    "id": "slon",
+    "title": "W naszej chatce mamy wielkiego słonia",
+    "publisher": "Newsweek",
+    "date": "2026-04-07",
+    "url": "https://www.newsweek.pl/biznes/finanse-polski-ekspert-opamietajmy-sie-i-zacznijmy-powaznie-rozmawiac/wxjg057",
+    "type": "Wywiad"
+  },
+  {
+    "id": "nozyce",
+    "title": "Sławomir Dudek o zapowiedzi Nawrockiego",
+    "publisher": "Polskie Radio 24",
+    "date": "2025-06-30",
+    "url": "https://polskieradio24.pl/artykul/3544725,slawomir-dudek-o-zapowiedzi-nawrockiego-powod-do-otwierania-szampanow-na-kremlu",
+    "type": "Omówienie wypowiedzi"
+  },
+  {
+    "id": "raj",
+    "title": "Rząd wyprowadził wydatki państwa do raju wydatkowego",
+    "publisher": "Rzeczpospolita",
+    "date": "2023-07-25",
+    "url": "https://www.rp.pl/budzet-i-podatki/art38777491-slawomir-dudek-rzad-wyprowadzil-wydatki-panstwa-do-raju-wydatkowego",
+    "type": "Wywiad"
+  },
+  {
+    "id": "lampki",
+    "title": "Studio SGH i DGP na Forum Ekonomicznym 2024",
+    "publisher": "Gazeta SGH",
+    "date": "2024-09-05",
+    "url": "https://gazeta.sgh.waw.pl/forum-ekonomiczne/studio-sgh-i-dziennika-gazety-prawnej-na-forum-ekonomicznym-2024-5-wrzesnia",
+    "type": "Relacja uczelni z rozmowy"
+  },
+  {
+    "id": "neo",
+    "title": "Raj wydatkowy w BGK",
+    "publisher": "Instytut Finansów Publicznych",
+    "date": null,
+    "url": "https://www.ifp.org.pl/polska-funduszowa-ruchy-pozorowane-zamiast-reformy/",
+    "type": "Tekst autorski"
+  },
+  {
+    "id": "snieg",
+    "title": "Kula śnieżna długu toczy się coraz szybciej",
+    "publisher": "Puls Biznesu",
+    "date": "2026-08-12",
+    "url": "https://www.pb.pl/budzet-na-2027-rok-kula-sniezna-dlugu-toczy-sie-coraz-szybciej-rzad-wypiera-prawde-o-stanie-finansow-publicznych-1265433",
+    "type": "Wywiad"
+  },
+  {
+    "id": "bomba",
+    "title": "Morawiecki na spotkaniu Eurogrupy",
+    "publisher": "Polskie Radio 24",
+    "date": "2017-11-06",
+    "url": "https://polskieradio24.pl/artykul/1912957,mateusz-morawiecki-na-spotkaniu-eurogrupy-sprzeciwiamy-sie-osobnemu-budzetowi-strefy-euro",
+    "type": "Relacja z wypowiedzi"
+  },
+  {
+    "id": "kula",
+    "title": "Debata w sprawie OFE",
+    "publisher": "Rzeczpospolita",
+    "date": "2011-03-21",
+    "url": "https://www.rp.pl/ubezpieczenia/art14650301-debata-w-sprawie-ofe",
+    "type": "Relacja z debaty"
+  },
+  {
+    "id": "pociag",
+    "title": "Fatalny stan finansów publicznych. Polska idzie w ślady Grecji",
+    "publisher": "Dziennik Gazeta Prawna",
+    "date": "2025-10-20",
+    "url": "https://www.gazetaprawna.pl/biznes/wideo/10669337,fatalny-stan-finansow-publicznych-polska-idzie-w-slady-grecji.html",
+    "type": "Relacja redakcji / materiał partnerski"
+  },
+  {
+    "id": "lawina",
+    "title": "Polsce grozi finansowa katastrofa?",
+    "publisher": "Radio ZET",
+    "date": "2026-10-06",
+    "url": "https://wiadomosci.radiozet.pl/na-zywo/post/gosc-radia-zet-polsce-grozi-finansowa-katastrofa-balcerowicz-mamy-najwiekszy-deficyt-w-europie",
+    "type": "Rozmowa radiowa"
+  }
+];
+const motifs = [
+  {
+    "id": "garb-fiskalny",
+    "title": "Garb fiskalny",
+    "author": "Balcerowicz",
+    "source": "garb",
+    "context": "Ciężar zadłużenia jako garb ograniczający możliwości rozwoju. Wypowiedź towarzyszyła uruchomieniu licznika długu w Warszawie.",
+    "quote": "garbem fiskalnym"
+  },
+  {
+    "id": "tygrys",
+    "title": "Tygrys z garbem",
+    "author": "Balcerowicz",
+    "source": "garb",
+    "context": "Zestawienie ambicji szybkiego rozwoju z obciążeniem długiem. Oba obrazy występują w tej samej wypowiedzi z 2010 roku."
+  },
+  {
+    "id": "mikolaje",
+    "title": "Święci Mikołajowie w polityce",
+    "author": "Balcerowicz",
+    "source": "mikolaj",
+    "context": "Obiecywanie świadczeń porównane do rozdawania prezentów. Balcerowicz wiąże ten obraz z politycznymi przyczynami greckiego kryzysu.",
+    "quote": "Świętych Mikołajów w polityce"
+  },
+  {
+    "id": "kieszen",
+    "title": "Ręka w cudzej kieszeni",
+    "author": "Balcerowicz",
+    "source": "mikolaj",
+    "context": "Balcerowicz przywołuje powiedzenie Ludwiga Erharda o finansowaniu własnych korzyści kosztem innych. Autorstwo pierwotnej metafory przypisuje Erhardowi."
+  },
+  {
+    "id": "dziura",
+    "title": "Dziura po pękniętym boomie",
+    "author": "Balcerowicz",
+    "source": "mikolaj",
+    "context": "Opisuje sytuację, w której wcześniejszy wzrost wpływów i wydatków ustępuje kryzysowi oraz deficytowi. Nie chodzi o konkretną prognozę dla Polski."
+  },
+  {
+    "id": "argentyna-analogia",
+    "title": "Argentyna jako ostrzeżenie",
+    "author": "Balcerowicz",
+    "source": "argentyna",
+    "context": "W autorskim felietonie Argentyna jest przykładem szkód przypisywanych wydatkom bez pokrycia. To analogia historyczna, nie dosłowna metafora."
+  },
+  {
+    "id": "krotkowzrocznosc",
+    "title": "Fiskalna krótkowzroczność",
+    "author": "Balcerowicz",
+    "source": "argentyna",
+    "context": "Krótki horyzont polityczny zostaje opisany przez obraz wady wzroku: korzyści dziś przesłaniają przyszłe konsekwencje."
+  },
+  {
+    "id": "kuracja-budzetowa",
+    "title": "Budżetowa kuracja",
+    "author": "Balcerowicz",
+    "source": "kuracja",
+    "context": "Dostosowanie finansów Portugalii zostaje przedstawione jako leczenie. To odniesienie do działań innego państwa, nie diagnoza Polski."
+  },
+  {
+    "id": "kreatywna",
+    "title": "Kreatywna księgowość",
+    "author": "Balcerowicz",
+    "source": "kuracja",
+    "context": "Pozorne dostosowania fiskalne porównane do manipulowania rachunkami. Autor omawia w tym miejscu doświadczenia państw UE."
+  },
+  {
+    "id": "strus-polski",
+    "title": "Udawanie strusia",
+    "author": "Balcerowicz",
+    "source": "strus",
+    "context": "Unikanie reform porównane do chowania głowy w piasek. W tej samej rozmowie Balcerowicz zastrzega, że nie zapowiada nagłego kryzysu.",
+    "quote": "udawać Greka albo strusia"
+  },
+  {
+    "id": "droga-grecka",
+    "title": "Droga grecka",
+    "author": "Balcerowicz",
+    "source": "strus",
+    "context": "Wybory polityczne opisane jako wybór trasy. Kontekst dotyczy emerytur i długoterminowego wzrostu; rozmówca zaznacza brak bieżącego kryzysu greckiego."
+  },
+  {
+    "id": "zdrowie-finansow",
+    "title": "Zdrowie finansów publicznych",
+    "author": "Balcerowicz",
+    "source": "zdrowie",
+    "context": "Metafora medyczna pojawia się w obronie informowania obywateli o długu. Termometr z powiązanego materiału jest wypowiedzią Petru, nie Balcerowicza."
+  },
+  {
+    "id": "transatlantyk",
+    "title": "Transatlantyk ku górze lodowej",
+    "author": "Dudek",
+    "source": "statek",
+    "context": "Osłabianie ograniczeń zadłużenia porównane do zmiany kursu wielkiego statku na niebezpieczny. Autorski tekst Dudka z 2020 roku."
+  },
+  {
+    "id": "rownia",
+    "title": "Równia pochyła",
+    "author": "Dudek",
+    "source": "statek",
+    "context": "Kolejne kryzysy i wyższe poziomy długu przedstawione jako coraz trudniejsze do zatrzymania zsuwanie się."
+  },
+  {
+    "id": "hamulec",
+    "title": "Konstytucyjny hamulec",
+    "author": "Dudek",
+    "source": "statek",
+    "context": "Limit zadłużenia przedstawiony jako zabezpieczenie ograniczające polityczne obietnice bez finansowania."
+  },
+  {
+    "id": "sepsa-kryzys",
+    "title": "Kryzys jak sepsa",
+    "author": "Dudek",
+    "source": "sepsa",
+    "context": "Dudek porównuje gwałtowny kryzys do nagłego pogorszenia stanu pacjenta, którego wcześniejsze wyniki nie alarmowały.",
+    "quote": "one są jak sepsa"
+  },
+  {
+    "id": "spirala",
+    "title": "Spirala populizmu i zadłużenia",
+    "author": "Dudek",
+    "source": "sepsa",
+    "context": "Wzajemne napędzanie się obietnic i długu opisane na przykładzie rywalizacji partii w Grecji."
+  },
+  {
+    "id": "grecka-tragedia",
+    "title": "Grecka tragedia",
+    "author": "Dudek",
+    "source": "sepsa",
+    "context": "Historia greckiego kryzysu staje się obrazem możliwych skutków polityki. Rozmówca jednocześnie podkreśla lepsze fundamenty polskiej gospodarki."
+  },
+  {
+    "id": "bez-trzymanki",
+    "title": "Jazda bez trzymanki",
+    "author": "Dudek",
+    "source": "wyscig",
+    "context": "Wpis komentujący nowe zobowiązania emerytalne wykorzystuje obraz rozpędzonej jazdy bez kontroli.",
+    "quote": "jedziemy bez trzymanki"
+  },
+  {
+    "id": "grecki-wyscig",
+    "title": "Grecki wyścig na populizm",
+    "author": "Dudek",
+    "source": "wyscig",
+    "context": "Konkurencja na obietnice przedstawiona jako wyścig, który właśnie przyspieszył. To przytoczony wpis Dudka, nie tylko nagłówek."
+  },
+  {
+    "id": "palacz-serce",
+    "title": "Nałogowy palacz przed zawałem",
+    "author": "Dudek",
+    "source": "palacz",
+    "context": "W odpowiedzi na zarzut wieloletniego straszenia Grecją Dudek używa analogii do ignorowania zaleceń lekarza. Zastrzega, że kryzys nie następuje od razu."
+  },
+  {
+    "id": "taniec",
+    "title": "Taniec na linie",
+    "author": "Dudek",
+    "source": "linia",
+    "context": "Projekt budżetu opisany jako balansowanie przy niepewnych wpływach. Obraz odnosi się do ryzyka, nie stwierdzonego bankructwa.",
+    "quote": "taniec na linie"
+  },
+  {
+    "id": "klif",
+    "title": "Klif zadłużenia",
+    "author": "Dudek",
+    "source": "linia",
+    "context": "Dudek opisuje polityczne naciski jako popychanie rządu ku niebezpiecznej krawędzi przy rosnącym zadłużeniu."
+  },
+  {
+    "id": "sciana",
+    "title": "Dojście do ściany",
+    "author": "Dudek",
+    "source": "linia",
+    "context": "Obraz kurczącej się przestrzeni do dalszego odkładania decyzji o finansach publicznych."
+  },
+  {
+    "id": "lyse-opony",
+    "title": "Łyse opony",
+    "author": "Dudek",
+    "source": "opony",
+    "context": "Brak buforów fiskalnych porównany do jazdy samochodem bez przyczepności. To część dłuższej, świadomie motoryzacyjnej analogii.",
+    "quote": "na całkowicie łysych oponach"
+  },
+  {
+    "id": "gololedz",
+    "title": "Noc, deszcz i gołoledź",
+    "author": "Dudek",
+    "source": "opony",
+    "context": "Trudniejsze warunki jazdy symbolizują niekorzystne otoczenie. To rozwinięcie tej samej analogii, a nie osobna prognoza."
+  },
+  {
+    "id": "poduszki",
+    "title": "Samochód bez poduszek",
+    "author": "Dudek",
+    "source": "opony",
+    "context": "Brak zabezpieczeń w finansach porównany do samochodu bez wyposażenia chroniącego przy wypadku."
+  },
+  {
+    "id": "wrc",
+    "title": "Budżet jako rajd WRC",
+    "author": "Dudek",
+    "source": "opony",
+    "context": "Dudek odrzuca traktowanie finansów jak sportowego rajdu i proponuje ostrożność zawodowego kierowcy. Nie zachęca do ryzykownej jazdy."
+  },
+  {
+    "id": "banda",
+    "title": "Jazda po bandzie",
+    "author": "Dudek",
+    "source": "opony",
+    "context": "Ryzykowna polityka zestawiona z bezpiecznym dowiezieniem ładunku. Motyw pochodzi z tej samej rozmowy o budżecie na 2027 rok."
+  },
+  {
+    "id": "jutro",
+    "title": "Budżet bez jutra",
+    "author": "Dudek",
+    "source": "opony",
+    "context": "Obraz planowania bez wystarczającego marginesu bezpieczeństwa na przyszłość."
+  },
+  {
+    "id": "slon-chatka",
+    "title": "Słoń w chatce",
+    "author": "Dudek",
+    "source": "slon",
+    "context": "Duży deficyt i rosnący dług przedstawione jako problem, którego nie da się pominąć, mimo dobrego wzrostu gospodarczego.",
+    "quote": "w naszej chatce mamy wielkiego słonia"
+  },
+  {
+    "id": "galaktyka",
+    "title": "Scenariusz z innej galaktyki",
+    "author": "Dudek",
+    "source": "slon",
+    "context": "Bardzo wysoki wzrost potrzebny do ustabilizowania długu opisany jako fantastyka. To krytyka założenia, nie prognoza faktycznego wzrostu."
+  },
+  {
+    "id": "nozyce-fiskalne",
+    "title": "Nożyce wydatków i dochodów",
+    "author": "Dudek",
+    "source": "nozyce",
+    "context": "Rozchodzenie się wpływów i wydatków porównane do otwierania dwóch ostrzy. Artykuł PR24 objaśnia ten obraz w ramach omówienia wypowiedzi."
+  },
+  {
+    "id": "raj-wydatkowy",
+    "title": "Raj wydatkowy",
+    "author": "Dudek",
+    "source": "raj",
+    "context": "Wydatki poza zwykłymi regułami budżetowymi porównane do działalności w raju podatkowym. Określenie dotyczy przejrzystości i kontroli."
+  },
+  {
+    "id": "kaganiec",
+    "title": "Zdjęty kaganiec",
+    "author": "Dudek",
+    "source": "raj",
+    "context": "Równoległy budżet przedstawiony jako sposób uwolnienia się od ograniczeń. To mocna metafora w krytyce reguł wydatkowania."
+  },
+  {
+    "id": "metna-woda",
+    "title": "Mętna woda",
+    "author": "Dudek",
+    "source": "raj",
+    "context": "Nieprzejrzystość pozabudżetowego wydawania pieniędzy zobrazowana przez wodę, w której trudno zobaczyć, co się dzieje."
+  },
+  {
+    "id": "zeszyt",
+    "title": "Państwo kupuje na zeszyt",
+    "author": "Dudek",
+    "source": "raj",
+    "context": "Wydawanie środków poza normalnymi procedurami porównane do zakupów z odroczonym rozliczeniem.",
+    "quote": "na zeszyt"
+  },
+  {
+    "id": "lampki-alarmowe",
+    "title": "Lampki zmieniają kolor",
+    "author": "Dudek",
+    "source": "lampki",
+    "context": "Narastające ryzyko pokazane jako przejście kontrolek ostrzegawczych z żółtego do pomarańczowego.",
+    "quote": "żółte lampki robią się pomarańczowe"
+  },
+  {
+    "id": "lawinowo",
+    "title": "Lawinowe zadłużenie",
+    "author": "Dudek",
+    "source": "lampki",
+    "context": "Szybki wzrost długu opisany językiem lawiny. Relacja SGH łączy ten obraz z brakiem przejrzystości budżetu."
+  },
+  {
+    "id": "dwa-budzety",
+    "title": "Dwa budżety zamiast jednego",
+    "author": "Dudek",
+    "source": "lampki",
+    "context": "Obraz oficjalnego i równoległego planu finansów. To skrót publicystyczny opisujący finansowanie poza ustawą budżetową."
+  },
+  {
+    "id": "neobudzet",
+    "title": "Neo-budżet",
+    "author": "Dudek",
+    "source": "neo",
+    "context": "Autorska etykieta dla równoległych finansów BGK. Dudek porównuje tę konstrukcję do spornych instytucji sądownictwa."
+  },
+  {
+    "id": "polska-funduszowa",
+    "title": "Polska funduszowa",
+    "author": "Dudek",
+    "source": "neo",
+    "context": "Nagromadzenie funduszy staje się obrazem państwa, którego wydatki rozproszono poza zwykłym budżetem."
+  },
+  {
+    "id": "kula-sniezna",
+    "title": "Kula śnieżna długu",
+    "author": "Dudek",
+    "source": "snieg",
+    "context": "Narastanie zadłużenia przedstawione jako samonapędzający się proces. Wywiad wiąże metaforę z utrzymywaniem wysokiego deficytu."
+  },
+  {
+    "id": "zakladnik",
+    "title": "Budżet zakładnikiem populizmu",
+    "author": "Dudek",
+    "source": "snieg",
+    "context": "Polityczne obietnice i wzajemne blokowanie zmian przedstawione jako ograniczenie możliwości naprawy finansów."
+  },
+  {
+    "id": "bomba-rozbrojona",
+    "title": "Tykająca, ale rozbrojona bomba",
+    "author": "Inni",
+    "source": "bomba",
+    "context": "Mateusz Morawiecki opisywał tak wysokie zadłużenie części krajów Europy. W tym materiale jednocześnie zapewniał o kontroli nad polskim długiem.",
+    "quote": "tykająca, choć rozbrojona obecnie bomba"
+  },
+  {
+    "id": "kula-noga",
+    "title": "Kula u nogi",
+    "author": "Inni",
+    "source": "kula",
+    "context": "W debacie o OFE tego obrazu użył Jacek Rostowski. Sam fakt obecności Balcerowicza w rozmowie nie czyni go autorem.",
+    "quote": "ciąży jak kula u nogi"
+  },
+  {
+    "id": "pociag-dlugu",
+    "title": "Rozpędzony pociąg zadłużenia",
+    "author": "Dudek",
+    "source": "pociag",
+    "context": "DGP streszcza diagnozę Dudka przez obraz przejęcia rozpędzonego pociągu. To parafraza redakcyjna, nie zweryfikowany dosłowny cytat."
+  },
+  {
+    "id": "lawina-kosztow",
+    "title": "Lawina kosztów obsługi długu",
+    "author": "Balcerowicz",
+    "source": "lawina",
+    "context": "Balcerowicz używa obrazu szybkiego wzrostu kosztów. W tej samej rozmowie nie potwierdza katastrofy rozumianej jako całkowite załamanie."
+  }
+];
+
+const bodies = [
+  {
+    "id": "b1",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Grecja jest już za rogiem. Róg sfinansowano długiem.",
+    "motif": "grecka-tragedia"
+  },
+  {
+    "id": "b2",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Polski budżet uczy się greckiego. Na razie umie powiedzieć: dopisz pan do rachunku.",
+    "motif": "grecki-wyscig"
+  },
+  {
+    "id": "b3",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Droga do Aten jest wybrukowana jednorazowymi świadczeniami wypłacanymi co roku.",
+    "motif": "droga-grecka"
+  },
+  {
+    "id": "b4",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Jeszcze jedna obietnica wyborcza i zamiast ustawy budżetowej będziemy uchwalać menu greckiej tawerny.",
+    "motif": "mikolaje"
+  },
+  {
+    "id": "b5",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "To nie jest druga Grecja. To Grecja w wersji premium, z ogrzewaniem i trzynastką.",
+    "motif": "grecka-tragedia"
+  },
+  {
+    "id": "b6",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Nie trzeba jechać na greckie wakacje. Wystarczy poczekać na krajowy scenariusz fiskalny.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b7",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Wyścig na obietnice ma jedną linię mety: Ateny. Zawodnicy twierdzą, że to tylko zgrupowanie.",
+    "motif": "grecki-wyscig"
+  },
+  {
+    "id": "b8",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Minister zapewnia, że mamy lepsze fundamenty niż Grecja. Dług właśnie prosi o pozwolenie na nadbudowę.",
+    "motif": "grecka-tragedia"
+  },
+  {
+    "id": "b9",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Grecja nie przyszła. Widocznie utknęła w korku z naszych obietnic wyborczych.",
+    "motif": "grecka-tragedia"
+  },
+  {
+    "id": "b10",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Na drogowskazie było napisane konsolidacja. Ktoś dopisał markerem: przez Ateny.",
+    "motif": "droga-grecka"
+  },
+  {
+    "id": "b11",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Państwo zamówiło grecką tragedię. Koszt scenografii przeniesiono poza budżet.",
+    "motif": "grecka-tragedia"
+  },
+  {
+    "id": "b12",
+    "theme": "grecja",
+    "diagnosis": "Scenariusz grecki",
+    "text": "Nie jesteśmy Grecją. Jesteśmy projektem pilotażowym pod roboczą nazwą Grecja Plus.",
+    "motif": "grecka-tragedia"
+  },
+  {
+    "id": "b13",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Argentyna nie powstaje w jeden dzień. Najpierw ktoś mówi, że tym razem to zupełnie inna Argentyna.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b14",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Buenos Aires jest daleko tylko na mapie. W arkuszu budżetowym wystarczy przeciągnąć formułę w dół.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b15",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Tango fiskalne ma dwa kroki: pożycz i zapewnij, że wszystko jest pod kontrolą.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b16",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Dług dostał paszport. Cel podróży: Argentyna. Koszty delegacji pokryją przyszłe pokolenia.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b17",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Mamy już wszystko do scenariusza argentyńskiego. Brakuje tylko kogoś, kto powie: nikt nie mógł przewidzieć.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b18",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Polityka fiskalna tańczy tango. Dochody stoją przy ścianie, a wydatki tańczą ze wszystkimi.",
+    "motif": "nozyce-fiskalne"
+  },
+  {
+    "id": "b19",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Scenariusz argentyński właśnie dostał polskie napisy. Lektor czyta je głosem pełnym odpowiedzialności.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b20",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Argentyński finał nie wymaga argentyńskiej pogody. Wystarczy klimat permanentnej kampanii.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b21",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Kierunek Buenos Aires. Bilety kupiono w przedsprzedaży na koszt osób, które jeszcze się nie urodziły.",
+    "motif": "argentyna-analogia"
+  },
+  {
+    "id": "b22",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Pampas długu rozciąga się po horyzont. Minister podziwia przestrzeń do dalszych wydatków.",
+    "motif": null
+  },
+  {
+    "id": "b23",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Mówiliśmy, że Polska to nie Argentyna. Argentyna poprosiła, żeby jej w to nie mieszać.",
+    "motif": null
+  },
+  {
+    "id": "b24",
+    "theme": "argentyna",
+    "diagnosis": "Scenariusz argentyński",
+    "text": "Kiedy deficyt słyszy słowo oszczędności, zaczyna udawać, że rozumie wyłącznie hiszpański.",
+    "motif": null
+  },
+  {
+    "id": "b25",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Jedziemy na łysych oponach w stronę greckiego zakrętu. Minister zapewnia, że hamulce będą w następnej nowelizacji.",
+    "motif": "lyse-opony"
+  },
+  {
+    "id": "b26",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Budżet ma gaz do dechy i hamulec w konsultacjach społecznych.",
+    "motif": "hamulec"
+  },
+  {
+    "id": "b27",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Pociąg zadłużenia nie ma maszynisty. Za to wagon restauracyjny rozdaje darmowe obiady.",
+    "motif": "pociag-dlugu"
+  },
+  {
+    "id": "b28",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Kontrolka długu świeci na czerwono. Rząd proponuje zakleić ją logo programu osłonowego.",
+    "motif": "lampki-alarmowe"
+  },
+  {
+    "id": "b29",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Finanse publiczne weszły w zakręt. Wydatki siedzą z przodu, podatnik jedzie w bagażniku.",
+    "motif": "banda"
+  },
+  {
+    "id": "b30",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Państwo jedzie bez trzymanki. Kierownica została przeniesiona do funduszu pozabudżetowego.",
+    "motif": "bez-trzymanki"
+  },
+  {
+    "id": "b31",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "To nie rajd WRC, ale minister i tak bierze zakręt na pełnym deficycie.",
+    "motif": "wrc"
+  },
+  {
+    "id": "b32",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Poduszki powietrzne sprzedano, żeby sfinansować większy silnik obietnic.",
+    "motif": "poduszki"
+  },
+  {
+    "id": "b33",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Nawigacja budżetowa mówi: zawróć. Minister wybrał opcję unikaj trudnych decyzji.",
+    "motif": "droga-grecka"
+  },
+  {
+    "id": "b34",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Autobus świadczeń jest pełny. Kierowca zapowiada kolejne przystanki, mimo że paliwo kupuje na zeszyt.",
+    "motif": "zeszyt"
+  },
+  {
+    "id": "b35",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Dług jedzie ekspresowym pasem. Konsolidacja czeka na autobus zastępczy.",
+    "motif": "pociag-dlugu"
+  },
+  {
+    "id": "b36",
+    "theme": "transport",
+    "diagnosis": "Motoryzacja fiskalna",
+    "text": "Przegląd techniczny państwa odroczono. Hamulce działały przecież przy poprzednich wyborach.",
+    "motif": "hamulec"
+  },
+  {
+    "id": "b37",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Budżet ma nadciśnienie, ale minister zapewnia, że to tylko emocje przed konferencją.",
+    "motif": "palacz-serce"
+  },
+  {
+    "id": "b38",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Dług dostał skierowanie na konsolidację. Najbliższy termin: po wszystkich wyborach.",
+    "motif": "zdrowie-finansow"
+  },
+  {
+    "id": "b39",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Finanse publiczne mają objawy sepsy. Rząd zaleca ciepłą herbatę i dalsze transfery.",
+    "motif": "sepsa-kryzys"
+  },
+  {
+    "id": "b40",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Pacjent pali kolejne obietnice. Lekarz ostrzega przed zawałem, rzecznik prosi o mniej alarmistyczny język.",
+    "motif": "palacz-serce"
+  },
+  {
+    "id": "b41",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Puls długu rośnie. Minister uspokaja: najważniejsze, że pacjent ma wysoki wzrost.",
+    "motif": "zdrowie-finansow"
+  },
+  {
+    "id": "b42",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Rentgen budżetu wykazał drugi budżet. Zalecono obserwację poza parlamentem.",
+    "motif": "dwa-budzety"
+  },
+  {
+    "id": "b43",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Deficyt jest przewlekły, a kampania wyborcza zakaźna. Pacjent odmawia leczenia przed sondażem.",
+    "motif": "palacz-serce"
+  },
+  {
+    "id": "b44",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Państwo leczy garb fiskalny kolejnym plecakiem obietnic.",
+    "motif": "garb-fiskalny"
+  },
+  {
+    "id": "b45",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Zamiast operacji budżetu wykonano lifting prezentacji. Pacjent wygląda stabilnie na slajdzie.",
+    "motif": "kuracja-budzetowa"
+  },
+  {
+    "id": "b46",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Badania są dobre. Wyniki nie obejmują tej części pacjenta, którą przeniesiono do BGK.",
+    "motif": "dwa-budzety"
+  },
+  {
+    "id": "b47",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Termometr długu pokazuje gorączkę. Zaproponowano zmianę skali na bardziej optymistyczną.",
+    "motif": null
+  },
+  {
+    "id": "b48",
+    "theme": "medycyna",
+    "diagnosis": "Oddział intensywnej ekonomii",
+    "text": "Kurację oszczędnościową zastąpiono suplementem pod nazwą jakoś to będzie.",
+    "motif": "kuracja-budzetowa"
+  },
+  {
+    "id": "b49",
+    "theme": "zywioly",
+    "diagnosis": "Katastrofa morska",
+    "text": "Polskie finanse to Titanic, na którym orkiestra gra na raty. Góra lodowa nie przyjmuje płatności odroczonych.",
+    "motif": "transatlantyk"
+  },
+  {
+    "id": "b50",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Kula śnieżna długu stoczyła się do budżetu. Rząd ogłosił sukces programu sportów zimowych.",
+    "motif": "kula-sniezna"
+  },
+  {
+    "id": "b51",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Bomba fiskalna tyka. Minister uspokaja, że tykanie zostało uwzględnione w prognozie.",
+    "motif": "bomba-rozbrojona"
+  },
+  {
+    "id": "b52",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Lawina kosztów obsługi długu ruszyła. Ratownicy zostali objęci planem oszczędnościowym.",
+    "motif": "lawina-kosztow"
+  },
+  {
+    "id": "b53",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Stoimy nad przepaścią. Nowy program zakłada dofinansowanie pierwszego kroku.",
+    "motif": "klif"
+  },
+  {
+    "id": "b54",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Góra lodowa jest już w polu widzenia. Minister zapewnia, że większość problemu znajduje się poza bilansem.",
+    "motif": "transatlantyk"
+  },
+  {
+    "id": "b55",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Powódź obietnic zalała dochody. Worki z piaskiem zamówiono na kredyt.",
+    "motif": "nozyce-fiskalne"
+  },
+  {
+    "id": "b56",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Na równi pochyłej zainstalowano windę. Obsługuje wyłącznie kierunek w dół.",
+    "motif": "rownia"
+  },
+  {
+    "id": "b57",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Fiskalny wulkan wygląda spokojnie. Minister prezentuje rekordowy wzrost temperatury jako dobrą wiadomość.",
+    "motif": null
+  },
+  {
+    "id": "b58",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Statek finansów nabiera wody. Powołano fundusz badający, czy woda jest dochodem.",
+    "motif": "transatlantyk"
+  },
+  {
+    "id": "b59",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Dług jest jak tsunami. Najpierw morze się cofa, a potem wraca z odsetkami.",
+    "motif": null
+  },
+  {
+    "id": "b60",
+    "theme": "zywioly",
+    "diagnosis": "Żywioły fiskalne",
+    "text": "Tykającą bombę rozbrojono przez przesunięcie zegara na następną kadencję.",
+    "motif": "bomba-rozbrojona"
+  },
+  {
+    "id": "b61",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Słoń w pokoju ma już własny fundusz celowy. Nadal udajemy, że to element wystroju.",
+    "motif": "slon-chatka"
+  },
+  {
+    "id": "b62",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Święty Mikołaj zostawił prezenty. Fakturę wystawił na dzieci, które jeszcze nie umieją czytać.",
+    "motif": "mikolaje"
+  },
+  {
+    "id": "b63",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Nożyce fiskalne otwierają się tak szeroko, że zaraz przetną przyszłość.",
+    "motif": "nozyce-fiskalne"
+  },
+  {
+    "id": "b64",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Dziurę budżetową zasypano papierem z kolejnej emisji obligacji.",
+    "motif": "dziura"
+  },
+  {
+    "id": "b65",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Raj wydatkowy ma basen bez dna. Za wejście płaci się po następnych wyborach.",
+    "motif": "raj-wydatkowy"
+  },
+  {
+    "id": "b66",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Budżet dostał brata bliźniaka w BGK. Rodzina utrzymuje, że to jedynak.",
+    "motif": "dwa-budzety"
+  },
+  {
+    "id": "b67",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Garb fiskalny rośnie tak szybko, że tygrys gospodarczy wygląda już jak wielbłąd.",
+    "motif": "tygrys"
+  },
+  {
+    "id": "b68",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Kreatywna księgowość weszła na poziom sztuki współczesnej. Nikt nie rozumie, ale wszyscy klaszczą.",
+    "motif": "kreatywna"
+  },
+  {
+    "id": "b69",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Budżet stoi na jednej nodze. Druga jest kulą, którą właśnie dopięto do pierwszej.",
+    "motif": "kula-noga"
+  },
+  {
+    "id": "b70",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Struś fiskalny schował głowę w piasek. Piasek pochodzi z funduszu infrastrukturalnego.",
+    "motif": "strus-polski"
+  },
+  {
+    "id": "b71",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Spirala zadłużenia dostała nowe schody. Teraz można spadać w bardziej komfortowych warunkach.",
+    "motif": "spirala"
+  },
+  {
+    "id": "b72",
+    "theme": "budzet",
+    "diagnosis": "Budżetologia stosowana",
+    "text": "Przyszłe pokolenia poprosiły o anulowanie subskrypcji długu. Regulamin nie przewiduje wypowiedzenia.",
+    "motif": null
+  }
+];
+const intros = [
+  [
+    "Warto zachować czujność.",
+    "Sytuacja wymaga namysłu.",
+    "Pozornie wszystko działa.",
+    "Przyjrzyjmy się temu spokojnie.",
+    "Sygnały są niepokojące.",
+    "To moment na refleksję.",
+    "Spokój bywa mylący.",
+    "Nie chcę siać paniki, ale"
+  ],
+  [
+    "Proszę państwa, ostrzegałem.",
+    "To ostatni moment.",
+    "Nie ma już czasu na półśrodki.",
+    "Spójrzmy prawdzie w oczy.",
+    "Nie chcę mówić: a nie mówiłem.",
+    "To się nie może dobrze skończyć.",
+    "Ktoś musi to powiedzieć.",
+    "Proszę mi nie przerywać."
+  ],
+  [
+    "TO NIE SĄ ĆWICZENIA.",
+    "Koniec fiskalnego świata jest blisko.",
+    "Ogłaszamy najwyższy stopień dramatyzmu.",
+    "Proszę zabezpieczyć oszczędności i metafory.",
+    "Rozpoczynamy ewakuację zdrowego rozsądku.",
+    "Syrena fiskalna właśnie zawyła.",
+    "Nadchodzi ostateczny rachunek.",
+    "Przekroczono wszystkie progi wyobraźni."
+  ]
+];
+const endings = [
+  [
+    "Rachunek przyjdzie później.",
+    "Warto o tym porozmawiać przed wyborami.",
+    "To kwestia czasu, nie prezentacji.",
+    "Dobrze byłoby mieć plan.",
+    "Na razie mamy za to konferencję.",
+    "Jeszcze można zmienić kurs.",
+    "Prognoza uspokaja wyłącznie autora prognozy.",
+    "Zalecana ostrożność przy otwieraniu kolejnego arkusza."
+  ],
+  [
+    "Za obietnice zapłaci ktoś, kto nie był na konferencji.",
+    "Przyszłe pokolenia już szukają paragonu.",
+    "Potem wszyscy powiedzą, że nikt nie ostrzegał.",
+    "Eksperci apelują o więcej ekspertów.",
+    "Rynki nie czytają slajdów o sukcesach.",
+    "Rachunek będzie miał własny rachunek.",
+    "To nie opinia. To ton głosu.",
+    "Sytuacja jest stabilna wyłącznie w komunikacie prasowym."
+  ],
+  [
+    "Ostatni podatnik gasi światło.",
+    "Przyszłość właśnie złożyła wniosek o upadłość.",
+    "Proszę nie panikować. Panika jest już w cenie.",
+    "W razie katastrofy należy kontaktować się z kolejną kadencją.",
+    "Nawet arkusz kalkulacyjny poprosił o azyl.",
+    "Orkiestra gra dalej, ale bierze zaliczki.",
+    "Apokalipsę sfinansowano z rezerwy celowej.",
+    "Do końca świata pozostała jedna nowelizacja."
+  ]
+];
+const themes = ['all','grecja','argentyna','transport','medycyna','zywioly','budzet'];
+const pick=(items,rng)=>items[Math.min(items.length-1,Math.floor(rng()*items.length))];
+function generateAlarm({theme='all',level=1,previousBody=null}={},rng=Math.random){
+  if(!themes.includes(theme)) throw new TypeError('Nieznany motyw.');
+  if(!Number.isInteger(level)||level<0||level>2) throw new TypeError('Nieprawidłowy poziom dramatyzmu.');
+  const pool=bodies.filter(x=>(theme==='all'||x.theme===theme)&&x.id!==previousBody);
+  const body=pick(pool,rng);
+  return {...body,level,text:[pick(intros[level],rng),body.text,pick(endings[level],rng)].join(' ')};
+}
+function clipboardText(alarm){return alarm.text+'\n\n[Satyra — Fiskalny Alarm. Tekst wymyślony, nie cytat.]';}
+
+
+
+const $=id=>document.getElementById(id);
+const node=(tag,className,text)=>{const el=document.createElement(tag);if(className)el.className=className;if(text!==undefined)el.textContent=text;return el;};
+const sourceById=new Map(sources.map(x=>[x.id,x]));
+const motifById=new Map(motifs.map(x=>[x.id,x]));
+const timeline=[{...bodies.find(x=>x.motif==='transatlantyk'),text:$('result').textContent,level:1,serial:1}];
+let position=0,serial=1,toastTimeout;
+const archive=node('div');
+const toolbar=node('div','archive-toolbar');
+const search=node('input');search.type='search';search.placeholder='Szukaj metafory, np. Grecja, garb, sepsa…';search.setAttribute('aria-label','Szukaj w archiwum metafor');
+const author=node('select');author.setAttribute('aria-label','Filtruj według autora');
+for(const [value,label] of [['all','Wszyscy autorzy'],['Balcerowicz','Leszek Balcerowicz'],['Dudek','Sławomir Dudek'],['Inni','Inni autorzy']]){const opt=node('option','',label);opt.value=value;author.append(opt);}
+toolbar.append(search,author);const archiveCount=node('p','archive-count');archiveCount.setAttribute('role','status');
+const grid=node('div','archive-grid');archive.append(toolbar,archiveCount,grid);
+const method=node('div','method');method.append(node('h2','','Co jest prawdziwe, a co wymyślone?'));
+for(const text of [
+  'Generator składa 72 autorskie scenki z wstępami i puentami: 13 824 możliwe kombinacje. Wszystkie są satyrą. Nazwiska pojawiają się wyłącznie przy udokumentowanych inspiracjach.',
+  'Archiwum obejmuje 48 motywów i analogii z 22 publikacji z lat 2003–2026. Kilka motywów to rozwinięcia jednej wypowiedzi. Cytaty oznaczono osobno; pozostałe opisy są omówieniami. Research zamknięto 9 października 2026. Datę pokazujemy tam, gdzie udało się ją potwierdzić w źródle.',
+  'Dramatyczna metafora nie dowodzi trafności prognozy. Dudek w rozmowach wskazuje także mocniejsze fundamenty Polski i brak kryzysu „tu i teraz”. Balcerowicz w Radiu ZET 6 października 2026 nie potwierdza katastrofy rozumianej jako całkowite załamanie.',
+  'Ważne autorstwo: kulę u nogi w debacie o OFE przywołał Rostowski. Balcerowicz przypisuje rękę w cudzej kieszeni Erhardowi. Pociąg zadłużenia w materiale DGP jest parafrazą redakcji. Titanic w generatorze to nasz żart rozwijający autorską metaforę transatlantyku Dudka.'
+])method.append(node('p','',text));
+archive.append(method);$('archive-content').append(archive);
+function authorName(m){if(m.author==='Balcerowicz')return 'Leszek Balcerowicz';if(m.author==='Dudek')return 'dr Sławomir Dudek';return m.source==='kula'?'Jacek Rostowski':'Mateusz Morawiecki';}
+function renderArchive(){
+  const term=search.value.trim().toLocaleLowerCase('pl');
+  const items=motifs.filter(m=>(author.value==='all'||m.author===author.value)&&[m.title,m.context,authorName(m),sourceById.get(m.source).publisher].join(' ').toLocaleLowerCase('pl').includes(term));
+  grid.replaceChildren();archiveCount.textContent=items.length+' / '+motifs.length+' motywów · '+new Set(items.map(x=>x.source)).size+' publikacji';
+  for(const m of items){
+    const s=sourceById.get(m.source);const card=node('article','source-card');card.id='motif-'+m.id;
+    const meta=node('div','card-meta');meta.append(node('span','',m.quote?'KRÓTKI CYTAT':'MOTYW / OMÓWIENIE'),node('span','',s.date?s.date.slice(0,4):'DATA NIEUSTALONA'));
+    card.append(meta,node('h2','',m.title));
+    if(m.quote)card.append(node('blockquote','','„'+m.quote+'”'));
+    card.append(node('p','',m.context),node('div','attribution',authorName(m)));
+    const date=s.date?new Date(s.date+'T12:00:00Z').toLocaleDateString('pl-PL',{timeZone:'Europe/Warsaw'}):'data nieustalona';
+    const link=node('a','source-link',s.publisher+' · '+date+' · Czytaj źródło');link.href=s.url;link.target='_blank';link.rel='noopener noreferrer';link.title=s.title;
+    card.append(link,node('div','kind',s.type+(s.dateNote?' · '+s.dateNote:'')));grid.append(card);
+  }
+  if(!items.length)grid.append(node('div','empty','Brak takich motywów. Spróbuj innego słowa albo zmień autora.'));
+}
+function showView(view,{focus=false}={}){
+  const isArchive=view==='archive';$('generator-view').hidden=isArchive;$('archive-view').hidden=!isArchive;
+  for(const [id,active] of [['nav-generator',!isArchive],['nav-archive',isArchive]]){$(id).classList.toggle('active',active);$(id).setAttribute('aria-pressed',String(active));}
+  if(focus){$('main').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
+}
+function navigate(view){window.location.hash=view;showView(view,{focus:true});}
+function openMotif(id){search.value='';author.value='all';renderArchive();showView('archive');window.location.hash='motif-'+id;requestAnimationFrame(()=>document.getElementById('motif-'+id)?.scrollIntoView({block:'center'}));}
+function route(){const hash=window.location.hash.slice(1);showView(hash==='archive'||hash.startsWith('motif-')?'archive':'generator');if(hash.startsWith('motif-'))requestAnimationFrame(()=>document.getElementById(hash)?.scrollIntoView({block:'center'}));}
+function draw(){
+  const x=timeline[position];$('result').textContent=x.text;$('diagnosis').textContent=x.diagnosis;
+  $('serial').textContent='KOMUNIKAT '+String(x.serial).padStart(3,'0');$('history-count').textContent=(position+1)+' / '+timeline.length;
+  $('previous').disabled=position===0;$('next').disabled=position===timeline.length-1;
+  $('inspiration').replaceChildren();document.getElementById('copy-fallback')?.remove();
+  if(x.motif){const m=motifById.get(x.motif);const line=node('span','','Prawdziwa inspiracja: '+m.title+' · '+authorName(m)+'. ');const link=node('a','','Zobacz kontekst');link.href='#motif-'+m.id;link.onclick=e=>{e.preventDefault();openMotif(m.id);};$('inspiration').append(line,link);}
+  else $('inspiration').textContent='Motyw autorski. Ta metafora pochodzi z generatora, nie z archiwum wypowiedzi.';
+}
+function makeAlarm(options={}){
+  const alarm=generateAlarm({theme:options.theme??$('theme').value,level:options.level??Number(document.querySelector('input[name="level"]:checked').value),previousBody:timeline[position].id});
+  timeline.push({...alarm,serial:++serial});if(timeline.length>100)timeline.shift();position=timeline.length-1;draw();return alarm;
+}
+function notify(text){clearTimeout(toastTimeout);$('toast').textContent=text;$('toast').hidden=false;toastTimeout=setTimeout(()=>$('toast').hidden=true,3500);}
+$('generate').onclick=()=>makeAlarm();
+$('previous').onclick=()=>{if(position>0){position--;draw();}};$('next').onclick=()=>{if(position<timeline.length-1){position++;draw();}};
+$('copy').onclick=async()=>{
+  const text=clipboardText(timeline[position]);
+  try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText(text);notify('Skopiowano komunikat z oznaczeniem satyry.');}
+  catch{document.getElementById('copy-fallback')?.remove();const area=node('textarea','copy-fallback');area.id='copy-fallback';area.value=text;area.readOnly=true;area.setAttribute('aria-label','Komunikat z oznaczeniem satyry — skopiuj ręcznie');$('inspiration').after(area);area.focus();area.select();notify('Komunikat zaznaczony. Skopiuj go skrótem klawiaturowym.');}
+};
+$('nav-generator').onclick=()=>navigate('generator');$('nav-archive').onclick=()=>navigate('archive');$('browse').onclick=()=>navigate('archive');
+search.oninput=renderArchive;author.onchange=renderArchive;window.addEventListener('hashchange',route);
+document.addEventListener('keydown',e=>{if(e.code!=='Space'||e.repeat||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||$('generator-view').hidden)return;if(e.target.closest('input,select,textarea,button,a,[contenteditable="true"]'))return;e.preventDefault();makeAlarm();});
+$('motif-count').textContent=motifs.length;$('source-count').textContent=sources.length;
+renderArchive();draw();route();
+if(document.modelContext?.registerTool){
+  const lifecycle=new AbortController();
+  try{Promise.resolve(document.modelContext.registerTool({name:'generate_fiscal_alarm',title:'Wygeneruj satyryczny alarm',description:'Generates a fictional Polish fiscal-panic joke, updates the visible generator and appends it to its session history. Never returns a real economist quote.',inputSchema:{type:'object',properties:{theme:{type:'string',enum:themes},level:{type:'integer',minimum:0,maximum:2}},additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(input){
+    if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).some(k=>!['theme','level'].includes(k)))throw new TypeError('Nieprawidłowe parametry.');
+    const theme=input.theme??'all',level=input.level??1;
+    if(!themes.includes(theme)||!Number.isInteger(level)||level<0||level>2)throw new TypeError('Nieprawidłowy motyw lub poziom.');
+    $('theme').value=theme;document.querySelector('input[name="level"][value="'+level+'"]').checked=true;showView('generator');window.location.hash='generator';const alarm=makeAlarm({theme,level});return {text:alarm.text,theme,level,fictional:true};
+  }},{signal:lifecycle.signal})).catch(()=>{});}catch{}
+  window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do generatora</a>
+<div class="edition"><span>NIEZALEŻNY OD RZECZYWISTOŚCI</span><span>BIULETYN PANIKI / WYDANIE 01</span></div>
+<header class="header"><a class="brand" href="#generator" aria-label="Fiskalny Alarm — generator"><span class="brand-mark" aria-hidden="true">!</span><span>FISKALNY<br>ALARM<span class="brand-period">.</span></span></a><div class="header-note">Instytut Paniki Fiskalnej<br><span>Instytucja całkowicie zmyślona.</span></div><nav aria-label="Główna nawigacja"><button id="nav-generator" class="nav-button active" aria-pressed="true">Generator</button><button id="nav-archive" class="nav-button" aria-pressed="false">To naprawdę padło</button></nav></header>
+<main id="main" tabindex="-1">
+<section id="generator-view" aria-label="Generator komunikatów">
+<div class="intro"><p class="eyebrow">FABRYKA FISKALNEJ APOKALIPSY</p><h1>Spokojnie.<br><span>Będzie katastrofa.</span></h1><p>Jeden klik. Nowy powód, żeby martwić się długiem.</p></div>
+<div class="workspace">
+<aside class="controls"><div class="control-heading"><span class="eyebrow">USTAW PARAMETRY</span><span aria-hidden="true">01 / 03</span></div>
+<label class="label" for="theme">Kierunek katastrofy</label><select id="theme"><option value="all">Pełne spektrum zagrożeń</option><option value="grecja">Scenariusz grecki</option><option value="argentyna">Scenariusz argentyński</option><option value="transport">Motoryzacja i transport</option><option value="medycyna">Oddział intensywnej ekonomii</option><option value="zywioly">Żywioły i katastrofy</option><option value="budzet">Budżetologia stosowana</option></select>
+<fieldset><legend class="label">Poziom dramatyzmu</legend><label class="level"><input type="radio" name="level" value="0"><span><strong>Niepokój</strong><small>Jeszcze rozmawiamy spokojnie.</small></span><span class="level-number">I</span></label><label class="level"><input type="radio" name="level" value="1" checked><span><strong>Studio telewizyjne</strong><small>Proszę mi nie przerywać.</small></span><span class="level-number">II</span></label><label class="level"><input type="radio" name="level" value="2"><span><strong>Pełna apokalipsa</strong><small>Ostatni gasi światło.</small></span><span class="level-number">III</span></label></fieldset>
+<button class="generate" id="generate"><span aria-hidden="true">⟳</span> Wygeneruj alarm</button><p class="keyboard-hint"><kbd>Spacja</kbd> losuje kolejny komunikat</p></aside>
+<article class="bulletin" aria-label="Wygenerowany komunikat"><div class="bulletin-top"><span class="status-tag">SATYRA / TEKST WYMYŚLONY</span><span id="serial">KOMUNIKAT 001</span></div><div class="quote-wrap"><span class="quote-mark" aria-hidden="true">„</span><p id="result" class="result" aria-live="polite" aria-atomic="true">Polskie finanse to Titanic, na którym orkiestra gra na raty. Góra lodowa nie przyjmuje płatności odroczonych.</p></div><div class="bulletin-bottom"><div><span class="eyebrow">DIAGNOZA GENERATORA</span><p id="diagnosis">Katastrofa morska</p></div><button id="copy" class="copy-button">Kopiuj komunikat</button></div><div id="inspiration" class="inspiration"></div></article>
+</div><div class="history-bar"><div><span class="eyebrow">OSTRZEŻENIA Z TEJ SESJI · OSTATNIE 100</span><span id="history-count">1 / 1</span></div><div><button id="previous" aria-label="Poprzedni komunikat" disabled>Poprzedni</button><button id="next" aria-label="Następny komunikat" disabled>Następny</button></div></div>
+<div class="research-strip"><p><strong id="motif-count">48</strong> motywów ze źródłami</p><p><strong id="source-count">22</strong> publikacje w researchu</p><button id="browse">Zobacz, co naprawdę padło</button></div>
+</section>
+<section id="archive-view" hidden aria-labelledby="archive-heading"><div class="archive-heading"><p class="eyebrow">ARCHIWUM PRAWDZIWYCH INSPIRACJI</p><h1 id="archive-heading">Życie pisze<br><span>najlepsze alarmy.</span></h1><p>Sprawdzone motywy, krótkie cytaty i kontekst. Każdy z linkiem do publikacji.</p></div><div id="archive-content"></div></section>
+</main>
+<footer><span>FISKALNY ALARM. <span class="muted">Produkowanie niepokoju od 2026.</span></span><p>Projekt satyryczny. Wylosowane teksty są fikcją, nie wypowiedziami Balcerowicza ani Dudka. Źródła znajdziesz w archiwum.</p></footer><div class="toast" id="toast" role="status" hidden></div>
+</body></html>

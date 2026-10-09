@@ -1,0 +1,1 @@
+{"name":"fiskalny-alarm","version":"1.0.0","private":true,"type":"module","description":"Lekki satyryczny generator fiskalnej apokalipsy","scripts":{"build":"node build.mjs","test":"node verify.mjs"},"engines":{"node":">=20"}}

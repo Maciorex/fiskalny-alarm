@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fiskalny Alarm — generator fiskalnej apokalipsy</title>
+<meta name="description" content="Grecja już za rogiem? Losuj satyryczne komunikaty o długu publicznym i poznaj prawdziwe metafory debaty ekonomicznej.">
+<meta name="theme-color" content="#111a27">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111a27'/%3E%3Cpath d='M16 4L30 28H2Z' fill='%23ffd449'/%3E%3Cpath d='M16 12v8' stroke='%23111a27' stroke-width='3'/%3E%3Ccircle cx='16' cy='24' r='1.7' fill='%23111a27'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do generatora</a>
+<div class="edition"><span>NIEZALEŻNY OD RZECZYWISTOŚCI</span><span>BIULETYN PANIKI / WYDANIE 01</span></div>
+<header class="header"><a class="brand" href="#generator" aria-label="Fiskalny Alarm — generator"><span class="brand-mark" aria-hidden="true">!</span><span>FISKALNY<br>ALARM<span class="brand-period">.</span></span></a><div class="header-note">Instytut Paniki Fiskalnej<br><span>Instytucja całkowicie zmyślona.</span></div><nav aria-label="Główna nawigacja"><button id="nav-generator" class="nav-button active" aria-pressed="true">Generator</button><button id="nav-archive" class="nav-button" aria-pressed="false">To naprawdę padło</button></nav></header>
+<main id="main" tabindex="-1">
+<section id="generator-view" aria-label="Generator komunikatów">
+<div class="intro"><p class="eyebrow">FABRYKA FISKALNEJ APOKALIPSY</p><h1>Spokojnie.<br><span>Będzie katastrofa.</span></h1><p>Jeden klik. Nowy powód, żeby martwić się długiem.</p></div>
+<div class="workspace">
+<aside class="controls"><div class="control-heading"><span class="eyebrow">USTAW PARAMETRY</span><span aria-hidden="true">01 / 03</span></div>
+<label class="label" for="theme">Kierunek katastrofy</label><select id="theme"><option value="all">Pełne spektrum zagrożeń</option><option value="grecja">Scenariusz grecki</option><option value="argentyna">Scenariusz argentyński</option><option value="transport">Motoryzacja i transport</option><option value="medycyna">Oddział intensywnej ekonomii</option><option value="zywioly">Żywioły i katastrofy</option><option value="budzet">Budżetologia stosowana</option></select>
+<fieldset><legend class="label">Poziom dramatyzmu</legend><label class="level"><input type="radio" name="level" value="0"><span><strong>Niepokój</strong><small>Jeszcze rozmawiamy spokojnie.</small></span><span class="level-number">I</span></label><label class="level"><input type="radio" name="level" value="1" checked><span><strong>Studio telewizyjne</strong><small>Proszę mi nie przerywać.</small></span><span class="level-number">II</span></label><label class="level"><input type="radio" name="level" value="2"><span><strong>Pełna apokalipsa</strong><small>Ostatni gasi światło.</small></span><span class="level-number">III</span></label></fieldset>
+<button class="generate" id="generate"><span aria-hidden="true">⟳</span> Wygeneruj alarm</button><p class="keyboard-hint"><kbd>Spacja</kbd> losuje kolejny komunikat</p></aside>
+<article class="bulletin" aria-label="Wygenerowany komunikat"><div class="bulletin-top"><span class="status-tag">SATYRA / TEKST WYMYŚLONY</span><span id="serial">KOMUNIKAT 001</span></div><div class="quote-wrap"><span class="quote-mark" aria-hidden="true">„</span><p id="result" class="result" aria-live="polite" aria-atomic="true">Polskie finanse to Titanic, na którym orkiestra gra na raty. Góra lodowa nie przyjmuje płatności odroczonych.</p></div><div class="bulletin-bottom"><div><span class="eyebrow">DIAGNOZA GENERATORA</span><p id="diagnosis">Katastrofa morska</p></div><button id="copy" class="copy-button">Kopiuj komunikat</button></div><div id="inspiration" class="inspiration"></div></article>
+</div><div class="history-bar"><div><span class="eyebrow">OSTRZEŻENIA Z TEJ SESJI · OSTATNIE 100</span><span id="history-count">1 / 1</span></div><div><button id="previous" aria-label="Poprzedni komunikat" disabled>Poprzedni</button><button id="next" aria-label="Następny komunikat" disabled>Następny</button></div></div>
+<div class="research-strip"><p><strong id="motif-count">48</strong> motywów ze źródłami</p><p><strong id="source-count">22</strong> publikacje w researchu</p><button id="browse">Zobacz, co naprawdę padło</button></div>
+</section>
+<section id="archive-view" hidden aria-labelledby="archive-heading"><div class="archive-heading"><p class="eyebrow">ARCHIWUM PRAWDZIWYCH INSPIRACJI</p><h1 id="archive-heading">Życie pisze<br><span>najlepsze alarmy.</span></h1><p>Sprawdzone motywy, krótkie cytaty i kontekst. Każdy z linkiem do publikacji.</p></div><div id="archive-content"></div></section>
+</main>
+<footer><span>FISKALNY ALARM. <span class="muted">Produkowanie niepokoju od 2026.</span></span><p>Projekt satyryczny. Wylosowane teksty są fikcją, nie wypowiedziami Balcerowicza ani Dudka. Źródła znajdziesz w archiwum.</p></footer><div class="toast" id="toast" role="status" hidden></div>
+</body></html>

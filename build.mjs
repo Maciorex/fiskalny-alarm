@@ -1,0 +1,12 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+const read=name=>readFile(new URL('./src/'+name,import.meta.url),'utf8');
+const [html,css,data,engine,app]=await Promise.all(['index.html','style.css','data.mjs','engine.mjs','app.mjs'].map(read));
+const script=[data,engine,app].join('\n').replace(/^import .*?;\s*$/gm,'').replace(/^export /gm,'');
+if(/<\/script/i.test(script)) throw new Error('Script closing tag in source');
+const output=html.replace('<link rel="stylesheet" href="style.css"><script type="module" src="app.mjs"></script>',()=>'<style>'+css+'</style><script type="module">'+script+'</script>');
+await mkdir(new URL('./dist/',import.meta.url),{recursive:true});
+await writeFile(new URL('./dist/index.html',import.meta.url),output);
+await mkdir(new URL('./docs/',import.meta.url),{recursive:true});
+await writeFile(new URL('./docs/index.html',import.meta.url),output);
+await writeFile(new URL('./docs/.nojekyll',import.meta.url),'');
+console.log(JSON.stringify({outputs:['dist/index.html','docs/index.html'],bytes:Buffer.byteLength(output),externalDependencies:0}));
