@@ -60,6 +60,13 @@ function makeAlarm(options={}){
 }
 function notify(text){clearTimeout(toastTimeout);$('toast').textContent=text;$('toast').hidden=false;toastTimeout=setTimeout(()=>$('toast').hidden=true,3500);}
 $('generate').onclick=()=>makeAlarm();
+$('randomize').onclick=()=>{
+  const theme=themes[Math.floor(Math.random()*themes.length)];
+  const level=Math.floor(Math.random()*intros.length);
+  $('theme').value=theme;
+  document.querySelector('input[name="level"][value="'+level+'"]').checked=true;
+  makeAlarm({theme,level});
+};
 $('previous').onclick=()=>{if(position>0){position--;draw();}};$('next').onclick=()=>{if(position<timeline.length-1){position++;draw();}};
 $('copy').onclick=async()=>{
   const text=clipboardText(timeline[position]);

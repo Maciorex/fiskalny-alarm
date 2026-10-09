@@ -5,6 +5,7 @@ Satyryczny generator komunikatów o nadchodzącej katastrofie długu publicznego
 - 72 autorskie scenki, 3 poziomy tonu, 6 kierunków katastrofy i tryb mieszany.
 - 13 824 kombinacje (72 × 8 wstępów × 8 puent × 3 poziomy).
 - 48 motywów i analogii w 22 źródłach z lat 2003–2026, z kontekstem oraz krótkimi cytatami.
+- Przycisk „Losowe ustawienia” losuje kierunek katastrofy oraz dramatyzm i od razu generuje nowy alarm.
 - Historia ostatnich 100 komunikatów w bieżącej sesji; kopiowanie zawsze dodaje oznaczenie satyry.
 - Filtr autora i wyszukiwanie w katalogu inspiracji.
 - Całość działa po stronie przeglądarki. Brak API, backendu, analityki, zewnętrznych fontów i zależności produkcyjnych.
