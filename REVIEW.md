@@ -23,11 +23,18 @@ Lekki generator, wybór motywu i poziomu dramatyzmu, historia ostatnich 100 alar
 - Usunięto zależność od lokalnego serwera: wynik zawiera wszystkie zasoby w jednym pliku.
 - Doprecyzowano, że historia dotyczy bieżącej sesji i obejmuje ostatnie 100 wyników.
 
-## Ograniczenia QA
+## Sprawdzenie publicznej strony
 
-Nie przeprowadzono pełnego renderowanego testu przeglądarkowego. Środowisko odmówiło uruchomienia lokalnego serwera, przeglądarki testowej oraz podglądu pliku przez zakaz protokołu `file:`. Nie obchodzono tego ograniczenia. Pomyślne testy logiki i kontrola źródła nie stanowią potwierdzenia wizualnej poprawności we wszystkich rozmiarach ekranu.
+9 października 2026 sprawdzono działającą stronę https://maciorex.github.io/fiskalny-alarm/ w przeglądarce:
 
-WebMCP jest opcjonalną, wykrywaną funkcją. Narzędzie `generate_fiscal_alarm` korzysta z tej samej funkcji co interfejs, waliduje argumenty przed zmianą stanu oraz jawnie zwraca `fictional: true`. Walidacja w przeglądarce obsługującej WebMCP jest niedostępna w tym środowisku; ta funkcja nie była żądanym warunkiem działania.
+- Losowanie zmienia komunikat i dopisuje go do historii; przycisk powrotu przechodzi do poprzedniego wyniku.
+- Archiwum otwiera się z nawigacji. Wyszukiwanie `sepsa` pozostawia jeden właściwy motyw z linkiem do źródła.
+- Przycisk kopiowania zgłasza sukces. Test przeglądarki nie potwierdził zawartości systemowego schowka; oznaczenie satyry w kopiowanym tekście sprawdzają testy logiki.
+- Układ szeroki zweryfikowano wizualnie; [zrzut ekranu](review/desktop.jpg) dokumentuje działającą wersję.
+- Przy szerokości 390 px karta wyniku i kontrolki mieszczą się w 350 px; dokument ma szerokość 390 px bez poziomego overflow. Wynik jest nad kontrolkami, tekst zawija się poprawnie. Przy długich komunikatach przycisk losowania wymaga przewinięcia w dół.
+- Opcjonalne WebMCP zostało wykryte. Wywołanie dla `grecja`, poziom `2`, zmieniło widoczny wynik, temat i poziom oraz zwróciło `fictional: true`.
+
+Nie jest to pełna macierz przeglądarek i urządzeń. Testy logiki obejmują 4200 losowań. Aplikacja nie korzysta z backendu, więc test interfejsu nie zmienia żadnych danych na serwerze.
 
 Archiwum dokumentuje użycie metafor, nie trafność diagnoz ani bieżące ryzyko fiskalne. Część materiałów prasowych może wymagać subskrypcji do przeczytania całości. Research to ręczny snapshot z 9 października 2026.
 
@@ -35,4 +42,4 @@ Archiwum dokumentuje użycie metafor, nie trafność diagnoz ani bieżące ryzyk
 
 Hosting projektu przeniesiono do publicznego repozytorium `Maciorex/fiskalny-alarm`. Build przygotowuje katalog `docs` dla Pages oraz samodzielny plik w `dist`. Dodano licencję MIT dla kodu i autorskich tekstów, z wyłączeniem cytatów osób trzecich.
 
-Publikacja odbywa się automatycznie po wypchnięciu gałęzi `main`, ze źródła `/docs`. Status pierwszego wdrożenia jest sprawdzany osobno; sam zapis kodu do repozytorium nie jest potwierdzeniem działającej strony.
+Publikacja odbywa się automatycznie po wypchnięciu gałęzi `main`, ze źródła `/docs`. Pierwsze wdrożenie potwierdzono statusem `built` w API Pages, a publiczny adres otwarto i sprawdzono w przeglądarce. HTTPS jest wymuszone.

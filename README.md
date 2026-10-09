@@ -28,7 +28,7 @@ Nie przypisuj wygenerowanego zdania do realnej osoby. Przy dodawaniu cytatu spra
 
 Repozytorium: https://github.com/Maciorex/fiskalny-alarm
 
-Docelowy adres strony: https://maciorex.github.io/fiskalny-alarm/
+Strona: https://maciorex.github.io/fiskalny-alarm/
 
 GitHub Pages publikuje katalog `docs` z gałęzi `main`. Build zapisuje identyczny, samodzielny HTML w `dist/index.html` i `docs/index.html`; plik `docs/.nojekyll` wyłącza przetwarzanie przez Jekyll. Hosting nie wymaga własnego serwera, usług API ani instalacji zależności.
 
@@ -39,3 +39,7 @@ Przy zmianach w źródłach uruchom `node build.mjs` oraz `node verify.mjs`, a n
 Kod i autorskie teksty generatora są dostępne na [licencji MIT](LICENSE). Przytoczone wypowiedzi osób trzecich nie są objęte tą licencją; prawa do nich pozostają przy ich autorach. Krótkie cytaty w archiwum są oznaczone i mają przypisane źródła.
 
 Pełne zestawienie źródeł, metodologia i pułapki atrybucji: [RESEARCH.md](RESEARCH.md). Wyniki sprawdzenia i ograniczenia QA: [REVIEW.md](REVIEW.md).
+
+## Podgląd
+
+![Fiskalny Alarm — działający generator](review/desktop.jpg)
